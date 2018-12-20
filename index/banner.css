@@ -1,0 +1,55 @@
+/* +++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++banner+++++++++++++ */
+/* +++++++++++++++++++++++++++++++++ */
+div#banner{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 450px;
+    background-image: url(../imgs/banners/banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.6s;
+}
+div#bannerText{
+    width: 260px;
+    height: 308px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 68%;
+    top: 85px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+div#bannerText ul#bannerTextUl{
+    margin: 0px auto 0px;
+    padding: 0px;
+    width: 260px;
+    height: 308px;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 5px;
+}
+ul#bannerTextUl li.bannerTextLi{
+    display: block;
+    color: #09969bc7;
+    line-height: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ffffff8a;
+    transition: all 0.6s;
+}
+ul#bannerTextUl li+li{
+    border-top: 2px #09969b4b solid;
+}
+ul#bannerTextUl li#chosenBannerText{
+    color: #ffffff;
+    font-weight: 900;
+    background-color: #0000004b;
+    font-size: 18px;
+}
+ul#bannerTextUl li.bannerTextLi:hover{
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #0000004b;
+}

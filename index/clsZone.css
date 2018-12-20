@@ -1,0 +1,11 @@
+div.clsZone{
+    width: 100%;
+    height: 600px;
+    margin: 50px 0;
+    padding: 0;
+    border: 1px #289a9e solid;
+    border-radius: 10px;
+}
+div#rec{
+    margin-top: 15px;
+}

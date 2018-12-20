@@ -1,0 +1,116 @@
+/* ++++++++++++++++++++++++++++++ */
+/* ++++++++++++++top+++++++++++++ */
+/* ++++++++++++++++++++++++++++++ */
+/* 顶部全站导航 */
+div#top{
+    z-index: 3;
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    /* position: fixed;
+    top: 0; */
+    background-color:#ffffffbb;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    /* background: -webkit-linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%);
+    background: -moz-linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%);
+    background: -o-linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%);
+    background: linear-gradient(#ffffffff 0%,#ffffff00 100%);  */
+}
+div#topInner{
+    width: 1200px;
+    height: 50px;
+    padding: 0;
+    margin: 0 auto;
+}
+ul.nav{
+    margin: 0px auto 0px;
+    padding: 0px;
+    width: 1200px;
+    height: 50px;
+    list-style: none;
+    overflow: hidden;
+    /* position: fixed;
+    top: 0; */
+}
+ul.nav li.topBtn{
+    padding: 0;
+    float: right;
+}
+#topLogoLi{
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+#topLogo{
+    height: 36px;
+    width: 135px;
+    padding: 7px 10px;
+}
+#topLogoLi:hover{
+    transform: rotate(358deg);
+}
+ul.nav li.topBtn a {
+    display: block;
+    color: #289a9e;
+    line-height: 50px;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+img#photo{
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+}
+ul.nav li.topBtn a:hover{
+    color:white;
+    font-weight: 900;
+    background-color: #45aeb1;
+}
+li.search{
+    float: right;
+    margin: 0 50px 0 0;
+}
+li.search input{
+    width: 250px;
+    padding: 8px 0px 8px 18px;
+    margin: 6px 0px;
+    outline: 0 none;
+    color: black;
+    font-size: 16px;
+    line-height: 20px;
+    background: rgba(255,255,255,0.9);
+    border: 0 none;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+li.search button{
+    position: relative;
+    right: 6px;
+    width: 80px;
+    height: 36px;
+    line-height: 20px;
+    padding: 0;
+    color: #fff;
+    font-weight: 800;
+    background: #45aeb1;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.5em;
+    outline: 0;
+    cursor: pointer;
+    border: 0 none;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+li.search button:hover{
+    background: #289a9e;
+}
+li.search button:active{
+    background: #067579;
+}
