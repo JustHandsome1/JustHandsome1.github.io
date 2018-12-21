@@ -13,9 +13,10 @@ div#top{
     top: 0; */
     background-color:#ffffffbb;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    /* background: -webkit-linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%);
-    background: -moz-linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%);
-    background: -o-linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%);
+    transition: all 0.6s;
+    /* background: -webkit-linear-gradient(#ffffffff 0%,#ffffff00 100%);
+    background: -moz-linear-gradient(#ffffffff 0%,#ffffff00 100%);
+    background: -o-linear-gradient(#ffffffff 0%,#ffffff00 100%);
     background: linear-gradient(#ffffffff 0%,#ffffff00 100%);  */
 }
 div#topInner{
@@ -88,6 +89,7 @@ li.search input{
     border: 0 none;
     border-top-left-radius: 18px;
     border-bottom-left-radius: 18px;
+    transition: all 0.6s;
 }
 li.search button{
     position: relative;

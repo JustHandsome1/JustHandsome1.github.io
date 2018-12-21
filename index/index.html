@@ -10,18 +10,23 @@
     <link href="about.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png"/>
     <script src="index.js"></script>
+    <script src="timeCircle.js"></script>
+    <script src="menu.js"></script>
     <script src="banner.js"></script>
     <script src="classNav.js"></script> 
 	<title>Momen目门-发现生活,发现世界</title>
 </head>
 <body>
     <ul id="menu">
-        <li><a href="#">音乐</a></li>
-        <li><a href="#firstt">戏剧</a></li>
-        <li><a href="#secondd">展览</a></li>
-        <li><a href="#thirdd">电影</a></li>
-        <li><a href="#fourthh">赛事</a></li>
-        <li><a href="#fivethh">讲座</a></li>
+        <li><a id="toTop" onmouseover="topHover(this)"><div></div></a></li>
+        <li><a id="firstLink"></a></li>
+        <li><a id="secondLink"></a></li>
+        <li><a id="thirdLink"></a></li>
+        <li><a id="fourthLink"></a></li>
+        <li><a id="fifthLink"></a></li>
+        <li><a id="sixthLink"></a></li>
+        <li><a id="seventhLink"></a></li>
+        <li><a id="eighthLink"></a></li>
     </ul>
 
     <div id="top">
@@ -67,7 +72,7 @@
         </div>
 
         <!-- 推荐 -->
-        <div class="clsZone" id="rec">
+        <div class="clsZone" id="rec">推荐
             <div class="czTop"></div>
             <div class="czInner">
 
@@ -76,37 +81,37 @@
         </div>
 
         <!-- 音乐 -->
-        <div class="clsZone" id="music">
+        <div class="clsZone" id="music">音乐
             <div></div>
         </div>
 
         <!-- 戏剧 -->
-        <div class="clsZone" id="drama">
-            <div></div>
-        </div>
-
-        <!-- 展览 -->
-        <div class="clsZone" id="exhibition">
+        <div class="clsZone" id="drama">戏剧
             <div></div>
         </div>
 
         <!-- 电影 -->
-        <div class="clsZone" id="movie">
+        <div class="clsZone" id="movie">电影
+            <div></div>
+        </div>
+
+        <!-- 展览 -->
+        <div class="clsZone" id="exhibition">展览
             <div></div>
         </div>
 
         <!-- 赛事 -->
-        <div class="clsZone" id="match">
+        <div class="clsZone" id="match">赛事
             <div></div>
         </div>
 
         <!-- 讲座 -->
-        <div class="clsZone" id="lecture">
+        <div class="clsZone" id="lecture">讲座
             <div></div>
         </div>
 
         <!-- 其他 -->
-        <div class="clsZone" id="other">
+        <div class="clsZone" id="other">其他
             <div></div>
         </div>
     </div>

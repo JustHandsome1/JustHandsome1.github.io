@@ -1,19 +1,46 @@
+// +++++++++++++++++++value++++++++++++++++++++
+// -------------------index--------------------
+var menu;//div#menu
+var menuEles;//div#menu a
+var banner;//div#banner
+var bannerText;//div#bannerText
+var bannerTextLis;//div#bannerText li
+var clsNav;//div#clsNav
+var cnBtns;//div#clsNav a
+var clsZones;//div.clsZone
+var clsZoneY = [];//div.clsZone Y
+var classes = ['推荐','音乐','戏剧','电影','展览','赛事','讲座','其他'];
+// -----------------timeCirle------------------
+var scrollPosition;//滚动条位置（px）
+var timer;//计时器（ms）
+var topDiv;//div#top
+var searchInput;//li.search input
+
 window.onload = function(){
-    // ++++++++++++++++++++value++++++++++++++++++++
-    var menu = document.getElementById('menu');
-    var menuEles = menu.getElementsByTagName('a');
-    var banner = document.getElementById('banner');
-    var bannerText = document.getElementById('bannerText');
-    var bannerTextLis = bannerText.getElementsByClassName('bannerTextLi');
-    var clsNav = document.getElementById('clsNav');
-    var cnBtns = clsNav.getElementsByTagName('a');
+    //++++++++++++++++++++value++++++++++++++++++++
+    // -------------------index--------------------
+    menu = document.getElementById('menu');
+    menuEles = menu.getElementsByTagName('a');
+    banner = document.getElementById('banner');
+    bannerText = document.getElementById('bannerText');
+    bannerTextLis = bannerText.getElementsByClassName('bannerTextLi');
+    clsNav = document.getElementById('clsNav');
+    cnBtns = clsNav.getElementsByTagName('a');
+    clsZones = document.getElementsByClassName('clsZone');
+    for(var i=0;i<clsZones.length;i++){
+        clsZoneY.push(getYpos(clsZones[i]));
+    }
+    // -----------------timeCirle-------------------
+    scrollPosition = 0;
+    timer = 0;
+    topDiv = document.getElementById('top');
+    searchInput = topDiv.getElementsByTagName('input');
     // +++++++++++++++++++++++++++++++++++++++++++++
 
-    // ++++++++++++++++++++init+++++++++++++++++++++
+    // =====================init====================
     //给分类导航加上浮动小条的移动事件
-    console.log(bannerTextLis);
     for(var i=0;i<cnBtns.length;i++){
-        var x= String(20+i*100);
+        var x = String(20+i*100);
         //console.log(x);
         cnBtns[i].setAttribute('onclick',"cnClick(this,"+x+",40)");
         //console.log(cnBtns[i].onclick);
@@ -24,10 +51,19 @@ window.onload = function(){
         bannerTextLis[i].setAttribute('onclick',func);
         // console.log(bannerTextLis[i].onclick);
     }
-    // +++++++++++++++++++++++++++++++++++++++++++++
+    //----------menu---------
+    menuEles[0].setAttribute('onclick','toY(0)')
+    menuEles[0].setAttribute('onmouseover','topHover(this)');
+    menuEles[0].setAttribute('onmouseout','topOut(this)');
+    for(var i=1;i<menuEles.length;i++){
+        var targetY = String(clsZoneY[i-1]-150);
+        // console.log(targetY);
+        menuEles[i].setAttribute('onclick','toY('+targetY+')');
+        menuEles[i].innerHTML=classes[i-1];
+    }
+    // =============================================
+    setInterval(timeLuancher1,30);
 }
-
-
 
 
 
@@ -49,4 +85,33 @@ function dTime(){
 function eMove(e,x,y){
     e.style.setProperty('top',y+'px');
     e.style.setProperty('left',x+'px');
+}
+//页面滚动至指定高度
+function toY(y){
+    var currentPosition,timer;
+    var wholeTime = 80;
+    currentPosition=document.documentElement.scrollTop || document.body.scrollTop;
+    // console.log(currentPosition);
+    var speed=Math.abs(/*parseInt*/((y-currentPosition)/wholeTime));
+    // console.log(speed);
+    timer=setInterval(function(){
+        currentPosition=document.documentElement.scrollTop || document.body.scrollTop;
+        if(currentPosition>y+speed){
+            currentPosition-=speed;
+            window.scrollTo(0,currentPosition);
+        }else if(currentPosition<y-speed){
+            currentPosition+=speed;
+            window.scrollTo(0,currentPosition);
+        }else{
+            // console.log('over');
+            window.scrollTo(0,y);
+            clearInterval(timer);
+        }
+    },1);
+}
+//获取元素相对窗口的纵坐标
+function getYpos(e){
+    var offset=e.offsetTop;
+    if(e.offsetParent!=null) offset+=getYpos(e.offsetParent);
+    return offset;
 }
