@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <link href="body.css" rel="stylesheet" type="text/css" />
     <link href="main.css" rel="stylesheet" type="text/css" />
     <link href="clsZone.css" rel="stylesheet" type="text/css" />
@@ -12,11 +13,13 @@
     <script src="index.js"></script>
     <script src="timeCircle.js"></script>
     <script src="menu.js"></script>
+    <script src="top.js"></script>
     <script src="banner.js"></script>
     <script src="classNav.js"></script> 
 	<title>Momen目门-发现生活,发现世界</title>
 </head>
 <body>
+    <!-- <div id="topBlank"></div> -->
     <ul id="menu">
         <li><a id="toTop" onmouseover="topHover(this)"><div></div></a></li>
         <li><a id="firstLink"></a></li>
@@ -31,29 +34,33 @@
 
     <div id="top">
         <div id="topInner">
+            <!-- <div id="zzList"></div> -->
             <ul class="nav">
                 <li id="topLogoLi"><img id="topLogo" src="../imgs/MomenLogo3.png"></li>
-                <li class="topBtn"><a href="#"><img id="photo" src="../imgs/photo.png"></a></li>
-                <li class="topBtn"><a href="#">社区</a></li>
-                <li class="topBtn"><a href="#">主站</a></li>
+                <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo" src="../imgs/photo.png"></a></li>
+                <li class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
+                <li class="topBtn"><a href="#" onmouseover="homeOver()" onmouseout="homeOut()">主站</a></li>
                 <li class="search">
                     <input type="text">
                     <button type="submit">搜索</button>
                 </li>
             </ul>
+            <div id="homeList" onmouseover="homeListOver()" onmouseout="homeOut()"></div>
+            <div id="socialList" onmouseover="socialListOver()" onmouseout="socialOut()"></div>
+            <div id="personalList" onmouseover="personalListOver()" onmouseout="personalOut()"></div>
         </div>
     </div>
 
-    <div id="banner">
-            <div id="bannerText">
-                <ul id="bannerTextUl">
-                    <li class="bannerTextLi" id="chosenBannerText">维也纳音乐会</li>
-                    <li class="bannerTextLi">火影忍者展览</li>
-                    <li class="bannerTextLi">bigbang</li>
-                    <li class="bannerTextLi">动力火车演唱会</li>
-                    <li class="bannerTextLi">贰佰没有伍</li>
-                </ul>
-            </div>
+    <div id="banner" style="background-image: url(../imgs/banners/banner1.jpg);">
+        <div id="bannerText">
+            <ul id="bannerTextUl">
+                <li class="bannerTextLi" id="chosenBannerText">维也纳音乐会</li>
+                <li class="bannerTextLi">火影忍者展览</li>
+                <li class="bannerTextLi">bigbang</li>
+                <li class="bannerTextLi">动力火车演唱会</li>
+                <li class="bannerTextLi">贰佰没有伍</li>
+            </ul>
+        </div>
     </div>
 
     <div id="main">
@@ -72,47 +79,134 @@
         </div>
 
         <!-- 推荐 -->
-        <div class="clsZone" id="rec">推荐
-            <div class="czTop"></div>
-            <div class="czInner">
-
-                <div class="czBig"></div>
-            </div>
+        <div class="clsZone" id="rec">
+            
         </div>
 
         <!-- 音乐 -->
         <div class="clsZone" id="music">音乐
-            <div></div>
+            <div class="czTop">
+                <div class="clsIcon"></div>
+            </div>
+            <div class="czLine"></div>
+            <div class="czInner">
+                <div class="czBig"></div>
+                <div class="czSmall">
+                    <div class="czSmall1"></div>
+                    <div class="czSmall2"></div>
+                    <div class="czSmall3"></div>
+                    <div class="czSmall4"></div>
+                </div>
+            </div>
+            <div class="czList"></div>
         </div>
 
         <!-- 戏剧 -->
         <div class="clsZone" id="drama">戏剧
-            <div></div>
+            <div class="czTop">
+                <div class="clsIcon"></div>
+            </div>
+            <div class="czLine"></div>
+            <div class="czInner">
+                <div class="czBig"></div>
+                <div class="czSmall">
+                    <div class="czSmall1"></div>
+                    <div class="czSmall2"></div>
+                    <div class="czSmall3"></div>
+                    <div class="czSmall4"></div>
+                </div>
+            </div>
+            <div class="czList"></div>
         </div>
 
         <!-- 电影 -->
         <div class="clsZone" id="movie">电影
-            <div></div>
+            <div class="czTop">
+                <div class="clsIcon"></div>
+            </div>
+            <div class="czLine"></div>
+            <div class="czInner">
+                <div class="czBig"></div>
+                <div class="czSmall">
+                    <div class="czSmall1"></div>
+                    <div class="czSmall2"></div>
+                    <div class="czSmall3"></div>
+                    <div class="czSmall4"></div>
+                </div>
+            </div>
+            <div class="czList"></div>
         </div>
 
         <!-- 展览 -->
         <div class="clsZone" id="exhibition">展览
-            <div></div>
+            <div class="czTop">
+                <div class="clsIcon"></div>
+            </div>
+            <div class="czLine"></div>
+            <div class="czInner">
+                <div class="czBig"></div>
+                <div class="czSmall">
+                    <div class="czSmall1"></div>
+                    <div class="czSmall2"></div>
+                    <div class="czSmall3"></div>
+                    <div class="czSmall4"></div>
+                </div>
+            </div>
+            <div class="czList"></div>
         </div>
 
         <!-- 赛事 -->
         <div class="clsZone" id="match">赛事
-            <div></div>
+            <div class="czTop">
+                <div class="clsIcon"></div>
+            </div>
+            <div class="czLine"></div>
+            <div class="czInner">
+                <div class="czBig"></div>
+                <div class="czSmall">
+                    <div class="czSmall1"></div>
+                    <div class="czSmall2"></div>
+                    <div class="czSmall3"></div>
+                    <div class="czSmall4"></div>
+                </div>
+            </div>
+            <div class="czList"></div>
         </div>
 
         <!-- 讲座 -->
         <div class="clsZone" id="lecture">讲座
-            <div></div>
+            <div class="czTop">
+                <div class="clsIcon"></div>
+            </div>
+            <div class="czLine"></div>
+            <div class="czInner">
+                <div class="czBig"></div>
+                <div class="czSmall">
+                    <div class="czSmall1"></div>
+                    <div class="czSmall2"></div>
+                    <div class="czSmall3"></div>
+                    <div class="czSmall4"></div>
+                </div>
+            </div>
+            <div class="czList"></div>
         </div>
 
         <!-- 其他 -->
         <div class="clsZone" id="other">其他
-            <div></div>
+            <div class="czTop">
+                <div class="clsIcon"></div>
+            </div>
+            <div class="czLine"></div>
+            <div class="czInner">
+                <div class="czBig"></div>
+                <div class="czSmall">
+                    <div class="czSmall1"></div>
+                    <div class="czSmall2"></div>
+                    <div class="czSmall3"></div>
+                    <div class="czSmall4"></div>
+                </div>
+            </div>
+            <div class="czList"></div>
         </div>
     </div>
 

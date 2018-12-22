@@ -20,6 +20,7 @@ div#top{
     background: linear-gradient(#ffffffff 0%,#ffffff00 100%);  */
 }
 div#topInner{
+    position: relative;
     width: 1200px;
     height: 50px;
     padding: 0;
@@ -53,12 +54,13 @@ ul.nav li.topBtn{
     transform: rotate(358deg);
 }
 ul.nav li.topBtn a {
+    width: 70px;
     display: block;
     color: #289a9e;
     line-height: 50px;
     font-size: 16px;
     letter-spacing: 0.2em;
-    padding: 0px 16px 0px 16px;
+    padding: 0px;
     text-decoration: none;
     transition: all 0.8s;
 }
@@ -115,4 +117,49 @@ li.search button:hover{
 }
 li.search button:active{
     background: #067579;
+}
+div#homeList{
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    position: absolute;
+    width: 180px;
+    height:200px;
+    top: 65px;
+    right:85px;
+    background-color: rgb(250, 250, 250);
+    border: 2px #95d9db solid;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    transition: all 0.5s;/* 记得修改top.js topDisappear的时间 */
+}
+div#socialList{
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    position: absolute;
+    width: 180px;
+    height:200px;
+    top: 65px;
+    right:15px;
+    background-color: rgb(250, 250, 250);
+    border: 2px #95d9db solid;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    transition: all 0.5s;
+}
+div#personalList{
+    display: none;
+    opacity: 0;
+    z-index: 5;
+    position: absolute;
+    width: 180px;
+    height:200px;
+    top: 65px;
+    right:-55px;
+    background-color: rgb(250, 250, 250);
+    border: 2px #95d9db solid;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    transition: all 0.5s;
 }

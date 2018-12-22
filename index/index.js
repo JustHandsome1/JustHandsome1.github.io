@@ -15,6 +15,10 @@ var scrollPosition;//滚动条位置（px）
 var timer;//计时器（ms）
 var topDiv;//div#top
 var searchInput;//li.search input
+var banners = ['banner1','banner2','banner3','banner4','banner5'];
+var changer;//banner的计时器
+// -------------------banner--------------------
+var isBannerHovered=false;
 
 window.onload = function(){
     //++++++++++++++++++++value++++++++++++++++++++
@@ -46,9 +50,10 @@ window.onload = function(){
         //console.log(cnBtns[i].onclick);
     }
     for(var i=0;i<bannerTextLis.length;i++){
-        var func = "chgBanner(this,'"+String(i+1)+"')";
+        var func = "clickBanner(this,'"+String(i+1)+"')";
         // console.log(x);
         bannerTextLis[i].setAttribute('onclick',func);
+        bannerTextLis[i].setAttribute('onmouseout','outBanner()');
         // console.log(bannerTextLis[i].onclick);
     }
     //----------menu---------
@@ -63,10 +68,17 @@ window.onload = function(){
     }
     // =============================================
     setInterval(timeLuancher1,30);
+    changer = setInterval(autoChg,5000);//banner自动轮播
 }
 
 
 
+//修改目标id到目标标签
+function chgId(idName,e){
+    var last=document.getElementById(idName);
+    if(last)last.setAttribute('id','');
+    e.id=idName;
+}
 //创建指定二长度的维数组,返回长l宽w的二维数组；
 function creatList(l,w){
     var list = new Array(l);
