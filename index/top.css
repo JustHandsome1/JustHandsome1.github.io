@@ -73,7 +73,7 @@ img#photo{
 ul.nav li.topBtn a:hover{
     color:white;
     font-weight: 900;
-    background-color: #45aeb1;
+    background-color: #45adb1b9;
 }
 li.search{
     float: right;
@@ -118,48 +118,86 @@ li.search button:hover{
 li.search button:active{
     background: #067579;
 }
-div#homeList{
+div.topList{
     display: none;
     opacity: 0;
     z-index: 5;
     position: absolute;
-    width: 180px;
-    height:200px;
     top: 65px;
-    right:85px;
     background-color: rgb(250, 250, 250);
-    border: 2px #95d9db solid;
-    border-radius: 6px;
+    border: 2px #b9e1e2 solid;
+    border-radius: 3px;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
     transition: all 0.5s;/* 记得修改top.js topDisappear的时间 */
+
+}
+div#homeList{
+    right: 25px;
 }
 div#socialList{
-    display: none;
-    opacity: 0;
-    z-index: 5;
-    position: absolute;
-    width: 180px;
-    height:200px;
-    top: 65px;
-    right:15px;
-    background-color: rgb(250, 250, 250);
-    border: 2px #95d9db solid;
-    border-radius: 6px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-    transition: all 0.5s;
+    right:30px;
 }
 div#personalList{
-    display: none;
-    opacity: 0;
-    z-index: 5;
-    position: absolute;
-    width: 180px;
-    height:200px;
-    top: 65px;
-    right:-55px;
-    background-color: rgb(250, 250, 250);
-    border: 2px #95d9db solid;
+    right:-45px;
+}
+div.topList ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    border-radius: 3px;
+}
+div.topList ul li{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+}
+div.topList ul li a{
+    color: #4e4e4e;
+    display: block;
+    line-height: 40px;
+    font-size: 14px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+div#homeList ul li a{
+    position: relative;
+    line-height: 80px;
+    width: 300px;
+}
+div.topList ul li a:hover{
+    background-color: #2222220e;
+    color: #289a9e;
+}
+a#userName{
+    color: #289a9e;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: Monospace;
+}
+a#exit{
+    font-size: 10px;
+    color: #4e4e4e77;
+}
+a#exit:hover{
+    font-size: 10px;
+    color: #ff4040a6;
+}
+div#homeList ul li a#seeMore{
+    margin: 8px 20px;
+    width: 260px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: #289a9e93;
     border-radius: 6px;
-    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-    transition: all 0.5s;
+}
+div#homeList ul li a#seeMore:hover{
+    background-color: #289a9ed2;
 }

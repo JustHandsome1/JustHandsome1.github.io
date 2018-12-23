@@ -31,19 +31,19 @@ function homeOut(){
     var e = document.getElementById('homeList');
         homeTimer = setTimeout(function(){
             topDisappear(e);
-        },200);
+        },20);
 }
 function socialOut(){
     var e = document.getElementById('socialList');
         socialTimer = setTimeout(function(){
             topDisappear(e);
-        },200);
+        },20);
 }
 function personalOut(){
     var e = document.getElementById('personalList');
         personalTimer = setTimeout(function(){
             topDisappear(e);
-        },200);
+        },20);
 }
 
 

@@ -23,7 +23,7 @@ function autoChg(){
 //侧边导航选中变化
 function changeMenuByY(){
     getScrollTop();
-    var topDis = 500;
+    var topDis = 600;
     if(scrollPosition<clsZoneY[0]-topDis){
         var last=document.getElementsByClassName('currentY')[0];
         if(last)last.classList.remove('currentY');
