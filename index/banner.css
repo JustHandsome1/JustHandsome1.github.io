@@ -39,6 +39,7 @@ ul#bannerTextUl li.bannerTextLi{
     font-weight: 500;
     background-color: #ffffff8a;
     transition: all 1s;
+    cursor: pointer;
 }
 ul#bannerTextUl li+li{
     border-top: 2px #09969b4b solid;

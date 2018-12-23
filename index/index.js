@@ -66,6 +66,9 @@ window.onload = function(){
         menuEles[i].setAttribute('onclick','toY('+targetY+')');
         menuEles[i].innerHTML=classes[i-1];
     }
+    //-------clsZone------
+    weeklyRankInit();
+    clsImgInit()
     // =============================================
     setInterval(timeLuancher1,30);
     changer = setInterval(autoChg,5000);//banner自动轮播
