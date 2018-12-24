@@ -164,6 +164,7 @@ div.topList ul li a{
     padding: 0;
     border-radius: 3px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 div#homeList ul li a{
     position: relative;
@@ -187,6 +188,7 @@ a#exit{
 a#exit:hover{
     font-size: 10px;
     color: #ff4040a6;
+    background-color: rgb(250, 250, 250);
 }
 div#homeList ul li a#seeMore{
     margin: 8px 20px;

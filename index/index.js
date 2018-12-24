@@ -10,6 +10,7 @@ var cnBtns;//div#clsNav a
 var clsZones;//div.clsZone
 var clsZoneY = [];//div.clsZone Y
 var classes = ['推荐','音乐','戏剧','电影','展览','赛事','讲座','其他'];
+var classEng = ['music','drama','movie','exhibition','match','lecture','other'];
 // -----------------timeCirle------------------
 var scrollPosition;//滚动条位置（px）
 var timer;//计时器（ms）
@@ -67,6 +68,7 @@ window.onload = function(){
         menuEles[i].innerHTML=classes[i-1];
     }
     //-------clsZone------
+    czInit();
     weeklyRankInit();
     clsImgInit()
     // =============================================

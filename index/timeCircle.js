@@ -23,8 +23,9 @@ function autoChg(){
 //侧边导航选中变化
 function changeMenuByY(){
     getScrollTop();
+    // console.log(scrollPosition);
     var topDis = 600;
-    if(scrollPosition<clsZoneY[0]-topDis){
+    if(scrollPosition<clsZoneY[0]-400){
         var last=document.getElementsByClassName('currentY')[0];
         if(last)last.classList.remove('currentY');
     }else if(scrollPosition>=clsZoneY[0]-topDis&&scrollPosition<clsZoneY[1]-topDis){

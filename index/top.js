@@ -1,18 +1,18 @@
 //鼠标悬停
 function homeOver(){
     var e = document.getElementById('homeList');
-    topAppear(e);
     if(homeTimer)clearTimeout(homeTimer);
+    topAppear(e);
 }
 function socialOver(){
     var e = document.getElementById('socialList');
-    topAppear(e);
     if(socialTimer)clearTimeout(socialTimer);
+    topAppear(e);
 }
 function personalOver(){
     var e = document.getElementById('personalList');
-    topAppear(e);
     if(personalTimer)clearTimeout(personalTimer);
+    topAppear(e);
 }
 function homeListOver(){
     if(homeTimer)clearTimeout(homeTimer);
@@ -29,21 +29,21 @@ var socialTimer;
 var personalTimer;
 function homeOut(){
     var e = document.getElementById('homeList');
-        homeTimer = setTimeout(function(){
-            topDisappear(e);
-        },20);
+    homeTimer = setTimeout(function(){
+        topHomeDisappear(e);
+    },100);
 }
 function socialOut(){
     var e = document.getElementById('socialList');
-        socialTimer = setTimeout(function(){
-            topDisappear(e);
-        },20);
+    socialTimer = setTimeout(function(){
+        topSocialDisappear(e);
+    },100);
 }
 function personalOut(){
     var e = document.getElementById('personalList');
-        personalTimer = setTimeout(function(){
-            topDisappear(e);
-        },20);
+    personalTimer = setTimeout(function(){
+        topPersonalDisappear(e);
+    },100);
 }
 
 
@@ -56,10 +56,24 @@ function topAppear(e){
         e.style.setProperty('opacity','1');
     },1);
 }
-function topDisappear(e){
+function topHomeDisappear(e){
     e.style.setProperty('top','65px');
     e.style.setProperty('opacity','0');
-    setTimeout(function(){
+    homeTimer = setTimeout(function(){
+        e.style.setProperty('display','none');
+    },500);
+}
+function topSocialDisappear(e){
+    e.style.setProperty('top','65px');
+    e.style.setProperty('opacity','0');
+    socialTimer = setTimeout(function(){
+        e.style.setProperty('display','none');
+    },500);
+}
+function topPersonalDisappear(e){
+    e.style.setProperty('top','65px');
+    e.style.setProperty('opacity','0');
+    personalTimer = setTimeout(function(){
         e.style.setProperty('display','none');
     },500);
 }
