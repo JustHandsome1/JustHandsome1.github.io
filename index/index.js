@@ -67,6 +67,8 @@ window.onload = function(){
         menuEles[i].setAttribute('onclick','toY('+targetY+')');
         menuEles[i].innerHTML=classes[i-1];
     }
+    //_________rec________
+    recInnit();
     //-------clsZone------
     czInit();
     weeklyRankInit();

@@ -5,7 +5,7 @@ function czInit(){
 }
 function weeklyRankInit(){
     weeklyRankWriter('music',musicRank);
-    weeklyRankWriter('drama',dramaRank);
+    // weeklyRankWriter('drama',dramaRank);
 }
 function clsImgInit(){
     for(var i=0;i<classEng.length;i++){
@@ -32,12 +32,12 @@ function czWriter(clsName,clsCN,classes){
     writeClsTop(clsName,clsCN,classes)
     tmpe = e.getElementsByClassName("czInner")[0];
     tmpe.innerHTML='\
-        <div class="czBig"></div>\
+        <div class="czBig"><div class="bigMask"></div></div>\
         <div class="czSmall">\
-            <div class="czSmall1"></div>\
-            <div class="czSmall2"></div>\
-            <div class="czSmall3"></div>\
-            <div class="czSmall4"></div>\
+            <div class="czSmall1"><div class="smallMask"></div></div>\
+            <div class="czSmall2"><div class="smallMask"></div></div>\
+            <div class="czSmall3"><div class="smallMask"></div></div>\
+            <div class="czSmall4"><div class="smallMask"></div></div>\
         </div>\
         ';
     // console.log(e.innerHTML);
@@ -150,14 +150,4 @@ var musicRank = [
     '【YUKIri×ゆう十】我爱你-夏目友人帐ED',
     '【三无】Nightglow',
     '【祖娅纳惜·FRE】TH讠NK【人声本家/踏云'
-]
-var dramaRank = [
-    '英国TNT剧院原版莎翁经典话剧《罗密欧与朱丽叶》',
-    '东野圭吾悬疑舞台剧《回廊亭杀人事件》',
-    '西方绘画500年，穿越大西洋的艺术',
-    '鹿先森乐队"华年"2018全国巡演北京站',
-    'IDO29第29届中国（北京）动漫游戏嘉年华',
-    '孟京辉经典戏剧作品《恋爱的犀牛》',
-    '流光永恒——奥黛丽?赫本展',
-    '蘑菇空间文艺电影之夜：韦斯·安德森导演作品精选放映'
 ]

@@ -56,7 +56,7 @@ div.czBig{
     border-radius: 8px;
     box-shadow: 1px 1px 5px #3f3f3f7a;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.4s;
 }
 div.czBig:hover{
     transform: scale(1.05);
@@ -287,6 +287,7 @@ div#rec{
 }
 div#recTitle{
     position: relative;
+    top: 20px;
     height: 60px;
     width: 300px;
     padding: 0;
@@ -322,23 +323,118 @@ div#recInner{
     top: 80px;
     width: 100%;
     height: 400px;
-    border: 1px #289a9e solid;
+    /* border: 1px #289a9e solid; */
+}
+div#recLeft,div#recRight{
+    position: absolute;
+    top: 160px;
+    width: 60px;
+    height: 60px;
+    background-size: 80%;
+    border-radius: 60px;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
 }
 div#recLeft{
-    position: absolute;
-    top: 170px;
     left: 20px;
-    width: 60px;
-    height: 60px;
     background-image: url(../imgs/icons/left5.png);
-    background-size: 100%;
+    background-position: 2px 6px;
+}
+div#recLeft:hover{
+    background-color: rgba(201, 201, 201, 0.3);
+    /* background-image: url(../imgs/icons/left3.png); */
 }
 div#recRight{
-    position: absolute;
-    top: 170px;
     right:20px;
-    width: 60px;
-    height: 60px;
     background-image: url(../imgs/icons/right3.png);
-    background-size: 100%;
+    background-position: 9px 6px;
+}
+div#recRight:hover{
+    background-color: rgba(201, 201, 201, 0.3);
+    /* background-image: url(../imgs/icons/right3.png); */
+}
+div#recItems{
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    /* border: 1px #289a9e solid; */
+}
+div#riInner{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 400px;
+    /* background-color: rgb(255, 188, 188); */
+    transition: all 0.6s;
+}
+/* div#riInner:hover{
+    left: -1000px;
+} */
+div.ri{
+    display: block;
+    float: left;
+    width: 218px;
+    height: 370px;
+    padding: 0;
+    margin: 15px 16px 0 16px;/* 整个宽需要时1000/4=250 */
+    /* background-color: rgb(240, 191, 255); */
+}
+div.riImg{
+    width: 210px;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    border: 4px #4fbcc0 solid;
+    background-image: url(../imgs/rec/rec1.jpg);
+    cursor: pointer;
+    transition: all 0.3s;
+    /* background-color: rgb(255, 191, 191); */
+}
+div.riImg:hover{
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+}
+div.riInfo{
+    width: 190px;
+    height: 50px;
+    padding: 5px 10px;
+    margin: 0;
+    /* background-color: rgba(167, 167, 167, 0.507); */
+    color: #3f3f3f;
+    font-size: 16px;
+    cursor: pointer;
+}
+div.riInfo:hover{
+    color: #4fbcc0;
+    text-decoration: underline;
+}
+
+div.bigMask{
+    margin-top: 70%;
+    height: 30%;
+    width: 100%;
+    text-align: right;
+    color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #414141b9;
+}
+div.smallMask{
+    width: 100%;
+    height: 100%;
+    background-color: #000000aa;
+    opacity: 1;
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+div.czSmall div:hover div.smallMask{
+    opacity: 0;;
+    /* display: none; */
 }
