@@ -1,5 +1,18 @@
 div#about{
-    width: 100%;
-    height: 400px;
-    background-color: rgba(131, 131, 131, 0.137);
+    opacity: 0;
+    width: 800px;
+    height: 250px;
+    padding: 400px 0 400px 0; 
+    margin: 0 auto;
+    /* background-color: rgba(131, 131, 131, 0.137); */
+    background-image: url(../imgs/class/slogan.png);
+    background-repeat: no-repeat;
+    background-size: 0 0;
+    background-position: center top;
+    transition: all 3s;
+}
+div.visiableAbout#about{
+    opacity: 1;
+    background-size: 800px 250px;
+    background-position: center center;
 }

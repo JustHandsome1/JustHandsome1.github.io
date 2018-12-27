@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png"/>
+    <link href="top.css" rel="stylesheet" type="text/css" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+	<link href="body.css" rel="stylesheet" type="text/css" />
+	<title>Momen目门-音乐</title>
+</head>
+<body>
+    <div id="top">
+        <div id="topInner">
+            <!-- <div id="zzList"></div> -->
+            <ul class="nav">
+                <li id="topLogoLi"><img id="topLogo" src="../imgs/MomenLogo3.png"></li>
+                <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo" src="../imgs/photo.png"></a></li>
+                <li class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
+                <li class="topBtn"><a href="#" onmouseover="homeOver()" onmouseout="homeOut()">关注</a></li>
+                <li class="search">
+                    <input type="text">
+                    <button type="submit">搜索</button>
+                </li>
+            </ul>
+            <div class="topList" id="homeList" onmouseover="homeListOver()" onmouseout="homeOut()">
+                <ul>
+                    <li><a>&nbsp;
+
+                    </a></li>
+                    <li><a>&nbsp;
+
+                    </a></li>
+                    <li><a>&nbsp;
+
+                    </a></li>
+                    <li><a id="seeMore">查&nbsp;看&nbsp;更&nbsp;多</a></li>
+                </ul>
+            </div>
+            <div class="topList" id="socialList" onmouseover="socialListOver()" onmouseout="socialOut()">
+                <ul>
+                    <li><a>兴趣圈</a></li>
+                    <li><a>&nbsp;</a></li>
+                    <li><a>&nbsp;</a></li>
+                </ul>
+            </div>
+            <div class="topList" id="personalList" onmouseover="personalListOver()" onmouseout="personalOut()">
+                <ul>
+                    <li><a id="userName">巨蒙#18274</a></li>
+                    <li><a>浏览历史</a></li>
+                    <li><a>我的足迹</a></li>
+                    <li><a>我的行程</a></li>
+                    <li><a id="exit">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div id="main">
+
+    </div>
+</body>
+
+<script src="top.js"></script>
+<script src="class.js"></script>
+</html>

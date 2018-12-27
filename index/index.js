@@ -9,8 +9,6 @@ var clsNav;//div#clsNav
 var cnBtns;//div#clsNav a
 var clsZones;//div.clsZone
 var clsZoneY = [];//div.clsZone Y
-var classes = ['推荐','音乐','戏剧','电影','展览','赛事','讲座','其他'];
-var classEng = ['music','drama','movie','exhibition','match','lecture','other'];
 // -----------------timeCirle------------------
 var scrollPosition;//滚动条位置（px）
 var timer;//计时器（ms）
@@ -22,6 +20,7 @@ var changer;//banner的计时器
 var isBannerHovered=false;
 
 window.onload = function(){
+    console.log(itemInfo['music'][0]['name']);
     //++++++++++++++++++++value++++++++++++++++++++
     // -------------------index--------------------
     menu = document.getElementById('menu');
@@ -72,7 +71,8 @@ window.onload = function(){
     //-------clsZone------
     czInit();
     weeklyRankInit();
-    clsImgInit()
+    clsImgInit();
+    console.log('here');
     // =============================================
     setInterval(timeLuancher1,30);
     changer = setInterval(autoChg,5000);//banner自动轮播
@@ -100,7 +100,7 @@ function dTime(){
     var date2=new Date();
     var date3=date2.getTime()-date1.getTime()  //时间差的毫秒数
 }
-//元素向右移动xpx，向下移动ypx
+//元素向右移动到xpx，向下移动到ypx
 function eMove(e,x,y){
     e.style.setProperty('top',y+'px');
     e.style.setProperty('left',x+'px');

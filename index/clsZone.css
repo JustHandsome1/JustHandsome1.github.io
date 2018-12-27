@@ -59,11 +59,11 @@ div.czBig{
     transition: all 0.4s;
 }
 div.czBig:hover{
-    transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    -ms-transform: scale(1.05);
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
 }
 div.czSmall{
     position: absolute;
@@ -88,7 +88,7 @@ div.czSmall div{
     /* background-attachment: fixed; */
     background-position: center center;
     cursor: pointer;
-    transition: all 0.5s;
+    transition: all 0.8s;
     transition-timing-function: ease-out;
     -moz-transition-timing-function: ease-out; /* Firefox 4 */
     -webkit-transition-timing-function: ease-out; /* Safari 和 Chrome */
@@ -391,15 +391,18 @@ div.riImg{
     border: 4px #4fbcc0 solid;
     background-image: url(../imgs/rec/rec1.jpg);
     cursor: pointer;
+    box-shadow: 0 1px 2px #818181a2;
     transition: all 0.3s;
     /* background-color: rgb(255, 191, 191); */
 }
 div.riImg:hover{
-    transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    -ms-transform: scale(1.03);
+    box-shadow: 0 5px 10px #818181a2;
+    margin: -10px 0 10px 0;
+    transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    -ms-transform: scale(1.01);
 }
 div.riInfo{
     width: 190px;
@@ -417,24 +420,47 @@ div.riInfo:hover{
 }
 
 div.bigMask{
-    margin-top: 70%;
-    height: 30%;
-    width: 100%;
+    overflow: hidden;
+    margin: 70% 0 0 0;
+    padding: 3% 10% 0 10%;
+    height: 27%;
+    width: 80%;
+    line-height: 30px;
+    font-size: 20px;
     text-align: right;
     color: white;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-color: #414141b9;
+    background-color: #2e2e2e91;
+    transition: all 0.4s;
 }
-div.smallMask{
-    width: 100%;
-    height: 100%;
-    background-color: #000000aa;
+div.czBig:hover div.bigMask{
+    /* opacity: 0; */
+    margin: 100% 0 0 0;
+    padding: 0% 10% 0 10%;
+    height: 0%;
+}
+div.czSmall div.smallMask{
+    width: 90%;
+    margin: 66% 0 0 0;
+    height: 30%;
+    line-height: 24px;
+    padding: 4% 5% 0 5%;
+    color: white;
+    font-size: 16px;
+    background-color: #2b2b2ba8;
     opacity: 1;
-    transition: all 0.5s;
-    border-radius: 5px;
+    transition: all 0.3s;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 div.czSmall div:hover div.smallMask{
-    opacity: 0;;
+    opacity: 0;
+    transition: all 0.3s;
+    height: 0%;
+    padding: 0% 5% 0 5%;
+    margin: 100% 0 0 0;
+    font-size: 16px;
     /* display: none; */
 }

@@ -25,7 +25,8 @@ function changeMenuByY(){
     getScrollTop();
     // console.log(scrollPosition);
     var topDis = 600;
-    if(scrollPosition<clsZoneY[0]-400){
+    if(scrollPosition<clsZoneY[0]-400||scrollPosition>clsZoneY[7]+500){
+        document.getElementById('about').className='visiableAbout';
         var last=document.getElementsByClassName('currentY')[0];
         if(last)last.classList.remove('currentY');
     }else if(scrollPosition>=clsZoneY[0]-topDis&&scrollPosition<clsZoneY[1]-topDis){

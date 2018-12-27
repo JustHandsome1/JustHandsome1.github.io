@@ -1,0 +1,52 @@
+div#main{
+    width: 1200px;
+    /* height: 3000px; */
+    margin: 0 auto;
+    /* border: 2px #289a9e solid; */
+}
+
+
+div#selectBtn{
+    height: 40px;
+    width: 400px;
+    /* background-color: #289a9e; */
+    margin: 0 auto;
+    padding: 0;
+    /* border: 1px #ffffff solid; */
+    /* box-shadow: -1px -1px 5px #33333377 inset; */
+    border-radius: 50px;
+}
+div#paixu,div#shaixuan{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    width: 199px;
+    line-height: 40px;
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+    background-color: #289a9ec4;
+}
+div#paixu{
+    float: left;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+div#shaixuan{
+    float: right;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+
+div#pageNum{
+    margin: 0 auto;
+    height: 50px;
+    width: 300px;
+    padding: 50px 0 0 0;
+    border: 1px black solid;
+}
+
+div#about{
+    height:100px;
+}

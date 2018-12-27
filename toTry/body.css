@@ -1,0 +1,22 @@
+body{
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+    /* background-image: url(../imgs/bg3.png); */
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed; 
+    background-color: rgb(243, 243, 243);
+    font-family: Microsoft YaHei;
+}
+div#topBlank{
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+div#slogan{
+    width: 800px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #8cd7da;
+}
