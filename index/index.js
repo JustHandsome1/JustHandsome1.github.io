@@ -20,7 +20,7 @@ var changer;//banner的计时器
 var isBannerHovered=false;
 
 window.onload = function(){
-    console.log(itemInfo['music'][0]['name']);
+    // console.log(itemInfo['music'][0]['name']);
     //++++++++++++++++++++value++++++++++++++++++++
     // -------------------index--------------------
     menu = document.getElementById('menu');
@@ -72,7 +72,7 @@ window.onload = function(){
     czInit();
     weeklyRankInit();
     clsImgInit();
-    console.log('here');
+    // console.log('here');
     // =============================================
     setInterval(timeLuancher1,30);
     changer = setInterval(autoChg,5000);//banner自动轮播

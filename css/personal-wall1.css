@@ -1,0 +1,113 @@
+div#wishTitle{
+    float: left;
+    margin: 130px 130px 0 100px;
+    padding: 60px 0 0 0;
+    height: 240px;
+    line-height: 60px;
+    font-size: 34px;
+    width: 100px;
+    font-weight: 500;
+    background-image: url(../imgs/box1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* border: 7px #2facb1 solid; */
+}
+div#wishBox{
+    overflow: hidden;
+    position: absolute;/*这个地方不用绝对定位的话过度效果会出错，因为改变父级长宽会影响浮动*/
+    top: 30px;
+    left: 300px;
+    width: 860px;
+    height: 500px;
+    /* background-color: #fff; */
+}
+div#wishPage{
+    position: relative;
+    left: 0;
+    width: 1720px;
+    height: 500px;
+    transition: all 0.6s;
+    /* background-color: rgb(109, 43, 43); */
+}
+div.aWishPage{
+    float: left;
+    width: 860px;
+    height: 500px;
+    /* background-color: rgb(109, 43, 43); */
+}
+div.wishes{
+    position: relative;
+    top: 0;
+    float: left;
+    height: 200px;
+    width: 360px;
+    border: 4px #2facb1 solid;
+    background-color: rgb(243, 243, 243);
+    border-radius: 10px;
+    margin: 25px 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+div.wishes:hover{
+    top: -10px;
+    box-shadow: 0px 5px 8px #8888888a;
+}
+/* div#wishes1{
+    top: 60px;
+    left: 300px;
+}
+div#wishes2{
+    top: 60px;
+    left: 750px;
+}
+div#wishes3{
+    top: 330px;
+    left: 300px;
+}
+div#wishes4{
+    top: 330px;
+    left: 750px;
+} */
+div.wishImg{
+    float: left;
+    width: 140px;
+    height: 140px;
+    margin: 30px 0 30px 30px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    /* background-color: rgb(156, 106, 106); */
+}
+div.wishTitle{
+    float: left;
+    margin: 30px 10px 20px;
+    width: 160px;
+    line-height: 24px;
+    height: 48px;
+    font-size: 20px;
+}
+div.wishes:hover .wishTitle{
+    color: #2facb1;
+    text-decoration: underline;
+}
+div.wishAdd{
+    float: left;
+    margin: 48px 10px 20px;
+    width: 160px;
+    line-height: 24px;
+    height: 24px;
+    font-size: 14px;
+}
+div.wishAdd:hover{
+    text-decoration: underline;
+}
+div#wishPages{
+    clear: both;
+    margin:  0 auto;
+    padding: 100px 0 0 260px;
+    width: 200px;
+    height: 30px;
+}
+a.wishPageNum{
+    cursor: pointer;
+}

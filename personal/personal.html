@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png"/>
+    <link href="../css/top.css" rel="stylesheet" type="text/css" />
+    <link href="../css/personal.css" rel="stylesheet" type="text/css" />
+    <link href="../css/personal-photo.css" rel="stylesheet" type="text/css" />
+    <link href="../css/personal-main.css" rel="stylesheet" type="text/css" />
+    <link id="mainStyle" href="../css/personal-wall1.css" rel="stylesheet" type="text/css" />
+    <link href="../css/personal-wall2.css" rel="stylesheet" type="text/css" />
+    <link href="../css/personal-wall3.css" rel="stylesheet" type="text/css" />
+    <link href="../css/personal-wall4.css" rel="stylesheet" type="text/css" />
+    <title>Momen目门-我的主页</title>
+</head>
+<body>
+    <div id="top">
+        <div id="topInner">
+            <!-- <div id="zzList"></div> -->
+            <ul class="nav">
+                <li id="topLogoLi"><img id="topLogo" src="../imgs/MomenLogo3.png"></li>
+                <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo" src="../imgs/photo.png"></a></li>
+                <li class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
+                <li class="topBtn"><a href="#" onmouseover="homeOver()" onmouseout="homeOut()">关注</a></li>
+                <li class="search">
+                    <input type="text">
+                    <button type="submit">搜索</button>
+                </li>
+            </ul>
+            <div class="topList" id="homeList" onmouseover="homeListOver()" onmouseout="homeOut()">
+                <ul>
+                    <li><a>&nbsp;
+                        <div class="likePic"></div>
+                        <div class="likeTitle">favoriate1favoriate1</br>favoriate1</div>
+                        <div class="likeTime">2019.1.1</div>
+                    </a></li>
+                    <li><a>&nbsp;
+                            <div class="likePic"></div>
+                            <div class="likeTitle">favoriate2</div>
+                            <div class="likeTime">2019.2.2</div>
+                    </a></li>
+                    <li><a>&nbsp;
+                            <div class="likePic"></div>
+                            <div class="likeTitle">favoriate3</div>
+                            <div class="likeTime">2019.3.3</div>
+                    </a></li>
+                    <li><a id="seeMore">查&nbsp;看&nbsp;更&nbsp;多</a></li>
+                </ul>
+            </div>
+            <div class="topList" id="socialList" onmouseover="socialListOver()" onmouseout="socialOut()">
+                <ul>
+                    <li><a>消息</a></li>
+                    <li><a>我的组队</a></li>
+                    <li><a>兴趣圈</a></li>
+                </ul>
+            </div>
+            <div class="topList" id="personalList" onmouseover="personalListOver()" onmouseout="personalOut()">
+                <ul>
+                    <li><a id="userName">巨蒙#18274</a></li>
+                    <li><a>浏览历史</a></li>
+                    <li><a>我的足迹</a></li>
+                    <li><a>我的行程</a></li>
+                    <li><a id="exit">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="topBlank"></div>
+
+    <div id="photo">
+        <div id="info">
+            <div id="infoImg"></div>
+            <div id="infoName">巨蒙#18274</div>
+            <div id="infoSex"></div>
+            <div id="infoXz"></div>
+            <div id="from">From</div>
+            <div id="infoSchool">
+                北京邮电大学</br>
+                数字媒体与设计艺术学院</br>
+                工业设计
+            </div>
+        </div>
+        <div id="photoBox">
+            <div id="photoMask"></div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="navBar">
+            <ul id="nav">
+                <li>心愿墙</li>
+                <li>我的行程</li>
+                <li>我的好友</li>
+                <li>我的足迹</li>
+            </ul>
+            <div id="navLine"></div>
+        </div>
+        <div id="brick">
+            <div id="brickInner">
+                <div class="wall" id="wall1">
+                    <div id="wishTitle">心</br>愿</br>墙</div>
+                    <div id="wishBox">
+                        <div id="wishPage">
+                            <div class="aWishPage">
+                                <div class="wishes" id="wishes1">&nbsp;
+                                    <div class="wishImg"></div>
+                                    <div class="wishTitle"></div>
+                                    <div class="wishAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="wishes" id="wishes2">&nbsp;
+                                    <div class="wishImg"></div>
+                                    <div class="wishTitle"></div>
+                                    <div class="wishAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="wishes" id="wishes3">&nbsp;
+                                    <div class="wishImg"></div>
+                                    <div class="wishTitle"></div>
+                                    <div class="wishAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="wishes" id="wishes4">&nbsp;
+                                    <div class="wishImg"></div>
+                                    <div class="wishTitle"></div>
+                                    <div class="wishAdd">添加至“我的行程”</div>
+                                </div>
+                            </div>
+                            <div class="aWishPage">
+                                <div class="wishes" id="wishes1">&nbsp;
+                                    <div class="wishImg"></div>
+                                    <div class="wishTitle"></div>
+                                    <div class="wishAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="wishes" id="wishes2">&nbsp;
+                                    <div class="wishImg"></div>
+                                    <div class="wishTitle"></div>
+                                    <div class="wishAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="wishes" id="wishes3">&nbsp;
+                                    <div class="wishImg"></div>
+                                    <div class="wishTitle"></div>
+                                    <div class="wishAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="wishes" id="wishes4">&nbsp;
+                                    <div class="wishImg"></div>
+                                    <div class="wishTitle"></div>
+                                    <div class="wishAdd">添加至“我的行程”</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="wishPages">
+                        <a class="wishPageNum" style="color:#2facb1"></a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class="wishPageNum"></a>
+                    </div>
+                </div>
+                <div class="wall" id="wall2">
+                    <div id="schTitle"> 我</br>的</br>行</br>程</div>
+                    <div id="calendar">
+                        <div id="cldTitle">
+                            <div id="lastMonth"></div>
+                            <div id="thisMonth"></div>
+                            <div id="nextMonth"></div>
+                            <div id="thisYear"></div>
+                        </div>
+                        <div id="cldInner">
+                            <div id="week">
+                                <div class="weekday">Sun</div>
+                                <div class="weekday">Mon</div>
+                                <div class="weekday">Tue</div>
+                                <div class="weekday">Wed</div>
+                                <div class="weekday">Thu</div>
+                                <div class="weekday">Fri</div>
+                                <div class="weekday">Sat</div>
+                            </div>
+                            <div id="dates">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wall" id="wall3">
+                    <div id="frdTitle">心</br>愿</br>墙</div>
+                    <div id="frdBox">
+                        <div id="frdPage">
+                            <div class="aFrdPage">
+                                <div class="frds" id="frds1">&nbsp;
+                                    <div class="frdImg"></div>
+                                    <div class="frdTitle"></div>
+                                    <div class="frdAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="frds" id="frds2">&nbsp;
+                                    <div class="frdImg"></div>
+                                    <div class="frdTitle"></div>
+                                    <div class="frdAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="frds" id="frds3">&nbsp;
+                                    <div class="frdImg"></div>
+                                    <div class="frdTitle"></div>
+                                    <div class="frdAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="frds" id="frds4">&nbsp;
+                                    <div class="frdImg"></div>
+                                    <div class="frdTitle"></div>
+                                    <div class="frdAdd">添加至“我的行程”</div>
+                                </div>
+                            </div>
+                            <div class="aFrdPage">
+                                <div class="frds" id="frds1">&nbsp;
+                                    <div class="frdImg"></div>
+                                    <div class="frdTitle"></div>
+                                    <div class="frdAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="frds" id="frds2">&nbsp;
+                                    <div class="frdImg"></div>
+                                    <div class="frdTitle"></div>
+                                    <div class="frdAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="frds" id="frds3">&nbsp;
+                                    <div class="frdImg"></div>
+                                    <div class="frdTitle"></div>
+                                    <div class="frdAdd">添加至“我的行程”</div>
+                                </div>
+                                <div class="frds" id="frds4">&nbsp;
+                                    <div class="frdImg"></div>
+                                    <div class="frdTitle"></div>
+                                    <div class="frdAdd">添加至“我的行程”</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="frdPages">
+                        <a class="frdPageNum" style="color:#2facb1"></a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a class="frdPageNum"></a>
+                    </div>
+                </div>
+                <div class="wall" id="wall4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script src="../js/top.js"></script>
+<script src="../js/info.js"></script>
+<script src="../js/personal-nav.js"></script>
+<script src="../js/personal-mainWriter.js"></script>
+<script src="../js/personal.js"></script>
+</html>

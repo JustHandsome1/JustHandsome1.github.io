@@ -167,8 +167,9 @@ div.topList ul li a{
     cursor: pointer;
 }
 div#homeList ul li a{
+    display: block;
     position: relative;
-    line-height: 80px;
+    height: 80px;
     width: 300px;
 }
 div.topList ul li a:hover{
@@ -193,6 +194,7 @@ a#exit:hover{
 div#homeList ul li a#seeMore{
     margin: 8px 20px;
     width: 260px;
+    height: 30px;
     line-height: 30px;
     font-size: 12px;
     color: #ffffff;
@@ -202,4 +204,39 @@ div#homeList ul li a#seeMore{
 }
 div#homeList ul li a#seeMore:hover{
     background-color: #289a9ed2;
+}
+.likePic{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    background-image: url(../imgs/drama/drama1.jpg);
+    background-size: 100%;
+}
+div.likeTitle{
+   float: left;
+   text-align: left;
+   /* color: #4e4e4e; */
+   width: 200px;
+   height: 40px;
+   line-height: 20px;
+   padding: 0 0 0 10px;
+   margin: 10px 0 5px 0;
+   font-size: 16px;
+   /* background-color: rgb(172, 126, 126);  */
+}
+div.likeTitle:hover{
+    text-decoration: underline;
+}
+div.likeTime{
+    float: left;
+    text-align: left;
+    color: #4e4e4e;
+    width: 150px;
+    line-height: 16px;
+    padding: 0 0 0 10px;;
+    margin: 0;
+    font-size: 12px;
+    /* background-color: rgb(172, 126, 126);  */
 }

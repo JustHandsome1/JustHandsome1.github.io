@@ -9,21 +9,16 @@ div#main{
 }
 div#clsNav{
     position: relative;
-    margin: 0px auto 0px;
+    margin: 10px auto 0px;
     padding: 0px;
     width: 800px;
     list-style: none;
     overflow: hidden;
     /* background-color:  #45aeb12f; */
-    /* 分类导航条底色
-    background: -webkit-linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%);
-    background: -moz-linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%);
-    background: -o-linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%);
-    background: linear-gradient(90deg,#ffffff00 0%,#45aeb111 5%,#45aeb111 95%,#ffffff00 100%); */
 }
 /* 选项滑动小块 */
 div#clsNav div#cnLine{
-    display: block;
+    display: none;
     position: absolute;
     background-color: #289a9e;
     padding: 0;
@@ -59,16 +54,10 @@ ul#clsNavUl li.cnBtn a{
     cursor: pointer;
 }
 /* 选中类别渐变底色 */
-ul#clsNavUl li.cnBtn a#chosenClass{
+/* ul#clsNavUl li.cnBtn a#chosenClass{
     font-weight: 400;
     color: #289a9e;
-    /* background: -webkit-linear-gradient(90deg,#ffffff00 0%,#45aeb1aa 40%,#45aeb1aa 70%,#ffffff00 100%);
-    background: -moz-linear-gradient(90deg,#ffffff00 0%,#45aeb1aa 40%,#45aeb1aa 70%,#ffffff00 100%);
-    background: -o-linear-gradient(90deg,#ffffff00 0%,#45aeb1aa 40%,#45aeb1aa 70%,#ffffff00 100%);
-    background: linear-gradient(90deg,#ffffff00 0%,#45aeb1aa 40%,#8ac3c5aa 70%,#ffffff00 100%);
-    font-weight: 900;
-    color:white; */
-}
+} */
 ul#clsNavUl li.cnBtn a div.cnText{
     position: absolute;
     width: 100px;

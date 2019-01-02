@@ -35,6 +35,9 @@ div.clsMask:hover{
 }
 div#chosenCls{
     opacity: 0;
+    font-size: 30px;
+    padding: 80px 0 0 0;
+    height: 220px;
 }
 div#choseBox{
     position: absolute;

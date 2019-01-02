@@ -6,10 +6,10 @@ function writeCard(clsName){
         <div class="cPic"></div>\
         <div class="cName"></div>\
         <div class="cLocation"></div>\
-        <div class="cDate"></div>\
-        <div class="cTime"></div>\
         <div class="cHeart"></div>\
         <div class="cSchedule"></div>\
+        <div class="cDate"></div>\
+        <div class="cTime"></div>\
         ';
     }
 
