@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png"/>
+	<link href="../css/sign-body.css" rel="stylesheet" type="text/css" />
+	<link href="../css/sign-signin.css" rel="stylesheet" type="text/css" />
+	<link href="../css/sign-signup.css" rel="stylesheet" type="text/css" />
+	<link href="../css/sign-zhuce.css" rel="stylesheet" type="text/css" />
+	<link href="../css/sign-denglu.css" rel="stylesheet" type="text/css" />
+	<link href="../css/sign-button.css" rel="stylesheet" type="text/css" />
+	<title>Momen目门&nbsp;发现生活&nbsp;发现世界</title>
+</head>
+<body>
+	<div id="main">
+		<div id="left">
+			<div class="aCard" id="signin">
+				<div class="littleLogo"></div>
+				<div id="signinTitle">
+					登录目门，创造新的"Momen"
+				</div>
+				<div id="signinWay">
+					<div class="wayIcon" style="background-image:url(../imgs/sign/QQ.png)"></div>
+					<div class="wayIcon" style="background-image:url(../imgs/sign/wechat.png)"></div>
+					<div class="wayIcon" style="background-image:url(../imgs/sign/weibo.png)"></div>
+				</div>
+				<div id="oldUser">已有账户登陆</div>
+				<input id="signinUn" type="text" placeholder="用户名/手机号">
+				<input id="signinPs" type="password" placeholder="密码">
+				<div id="signinFgt">糟糕，忘记密码了!</div>
+				<button id="start" type="submit" onclick="start()" class="bubbly-button">开启我的旅程</button>
+			</div>
+			<div class="aCard" id="denglu">
+				<div id="dengluTitle">Hello, My old Friend!</div>
+				<div id="toSignin" onclick="toSignIn()">已&nbsp;有&nbsp;帐&nbsp;户</br>快&nbsp;去&nbsp;登&nbsp;录&nbsp;吧</div>
+				<div id="dengluSlogan"></div>	
+			</div>
+		</div>
+		<div id="right">
+			<div class="aCard" id="zhuce">
+				<div class="littleLogo"></div>
+				<div id="zhuceTitle">注册目门，记录每个"Momen"</div>
+				<div id="zhuceInfo">
+					<input class="zhuceInput" type="text" placeholder="用户名*">
+					<input class="zhuceInput" type="text" placeholder="手机号*">
+					<button id="getCode" class="infoBtn">获取验证码</button>
+					<input class="zhuceInput" type="text" placeholder="输入验证码*">
+					<input class="zhuceInput" type="text" placeholder="所在大学">
+					<input class="zhuceInput" type="text" placeholder="大学学号">
+					<button id="getUniversity" class="infoBtn">点击认证</button>
+					<input class="zhuceInput" type="password" placeholder="密码*">
+					<input class="zhuceInput" type="password" placeholder="确认密码*">
+				</div>
+				<button id="join" type="submit" onclick="start()" class="bubbly-button">加入Momen</button>
+			</div>
+			<div class="aCard" id="signup">
+				<div id="signupTitle">Hello, My new Friend!</div>
+				<div id="toSignUp"  onclick="toSignUp()">点&nbsp;击&nbsp;注&nbsp;册</br>成&nbsp;为&nbsp;Momer</div>
+				<div id="signupSlogan"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+<script src="../js/sign-writer.js"></script>
+<script src="../js/sign.js"></script>
+<script src="../js/sign-button.js"></script>
+</html>

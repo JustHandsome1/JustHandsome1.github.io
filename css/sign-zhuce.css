@@ -1,0 +1,43 @@
+div#zhuceTitle{
+    font-size: 22px;
+    color: #2facb1;
+    font-weight: 900;
+    padding: 17% 0 0 0;
+    margin: 0 auto 0;
+    width: 80%;
+    height: 5%;
+    /* background-color: #fff; */
+}
+div#zhuceInfo{
+    position: relative;
+    width: 400px;
+    height: 360px;
+    margin: 10px auto 0;
+    /* background-color: #fff; */
+}
+
+
+input.zhuceInput{
+    float: left;
+    display: block;
+    width: 200px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 800;
+    font-weight: normal;
+    padding: 0 20px;
+    margin: 20px 0 0 10px;
+    border: 2px #2facb1 solid;
+    border-radius: 100px;
+    transition: all 0.4s;
+    outline:none;
+}
+input.zhuceInput:focus{
+    padding: 0;
+    margin: 20px 20px 0 30px;
+    color: #777777;
+    border: 2px #2facb100 solid;
+    border-bottom: 2px #2facb1 solid;
+    background-color: #fff0;
+    border-radius: 0px;
+}

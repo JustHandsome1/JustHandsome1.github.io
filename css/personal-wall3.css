@@ -1,8 +1,8 @@
 div#frdTitle{
     float: left;
     margin: 130px 130px 0 100px;
-    padding: 60px 0 0 0;
-    height: 240px;
+    padding: 30px 0 0 0;
+    height: 270px;
     line-height: 60px;
     font-size: 34px;
     width: 100px;
@@ -41,6 +41,7 @@ div.frds{
     float: left;
     height: 200px;
     width: 360px;
+    color: #8d4b00;
     border: 4px #2facb1 solid;
     background-color: rgb(243, 243, 243);
     border-radius: 10px;
@@ -70,37 +71,80 @@ div#frds4{
 } */
 div.frdImg{
     float: left;
-    width: 140px;
-    height: 140px;
-    margin: 30px 0 30px 30px;
+    width: 90px;
+    height: 90px;
+    margin: 20px 20px 0 30px;
     background-size: 100%;
     background-repeat: no-repeat;
     border-radius: 300px;
     /* background-color: rgb(156, 106, 106); */
 }
-div.frdTitle{
+div.frdName{
+    clear: both;
     float: left;
-    margin: 30px 10px 20px;
-    width: 160px;
+    margin: 5px 0 0 10px;
+    width: 130px;
     line-height: 24px;
-    height: 48px;
-    font-size: 20px;
+    font-size: 14px;
 }
-div.frds:hover .frdTitle{
+div.frds:hover .frdName{
     color: #2facb1;
     text-decoration: underline;
 }
-div.frdAdd{
+div.frdLv{
+    clear: both;
     float: left;
-    margin: 48px 10px 20px;
-    width: 160px;
+    margin: 5px 0 0 30px;
+    width: 40px;
     line-height: 24px;
-    height: 24px;
     font-size: 14px;
 }
-div.frdAdd:hover{
-    text-decoration: underline;
+div.frdInfo{
+    float: left;
+    margin: 20px 0 0 10px;
+    width: 140px;
+    text-align: left;
+    line-height: 20px;
+    font-size: 16px;
 }
+div.want{
+    float: left;
+    margin: 5px 0 0 20px;
+    width: 200px;
+    text-align: left;
+    line-height: 16px;
+    font-size: 14px;
+}
+div.gone{
+    float: left;
+    margin: 5px 0 0 20px;
+    width: 160px;
+    text-align: left;
+    line-height: 16px;
+    font-size: 14px;
+}
+div.medal{
+    /* clear: right; */
+    float: left;
+    margin: 5px 0 0 20px;
+    width: 120px;
+    text-align: left;
+    line-height: 16px;
+    font-size: 14px;
+}
+div.frdSex{
+    float: left;
+    margin: 0 30px 0 10px;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-size: 14px;
+}
+
+
+
+
 div#frdPages{
     clear: both;
     margin:  0 auto;

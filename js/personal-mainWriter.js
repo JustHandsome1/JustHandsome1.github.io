@@ -9,7 +9,14 @@ function innerWriter(){
 
 //=====================心愿墙=====================
 function wishWriter(page){
-    var e=document.getElementsByClassName('wishImg');
+    var e=document.getElementsByClassName('wishes');
+    for(var i=0;i<e.length;i++){
+        e[i].innerHTML = '\
+        <div class="wishImg"></div>\
+        <div class="wishTitle"></div>\
+        <div class="wishAdd">添加至“我的行程”</div>';
+    }
+    e=document.getElementsByClassName('wishImg');
     for(var i=0;i<e.length;i++){
         e[i].style.backgroundImage = 'url('+itemInfo['music'][i]['src']+')';
     }
@@ -122,13 +129,49 @@ function MaxDayOfDate(month,year)  {
 
 //====================我的好友====================
 function frdWriter(page){
-    var e=document.getElementsByClassName('frdImg');
+    var e=document.getElementsByClassName('frds');
     for(var i=0;i<e.length;i++){
-        e[i].style.backgroundImage = 'url('+itemInfo['music'][i]['src']+')';
+        e[i].innerHTML = '\
+        <div class="frdImg"></div>\
+        <div class="frdInfo">近日想去：</div>\
+        <div class="want"></div>\
+        <div class="frdInfo">最近去了：</div>\
+        <div class="gone"></div>\
+        <div class="frdName"></div>\
+        <div class="frdInfo">获得勋章：</div>\
+        <div class="frdLv"></div>\
+        <div class="frdSex"></div>\
+        <div class="medal"></div>\
+        ';
     }
-    e=document.getElementsByClassName('frdTitle');
+    e=document.getElementsByClassName('frdImg');
+    // console.log(e[0]);
     for(var i=0;i<e.length;i++){
-        e[i].innerHTML = itemInfo['music'][i]['name'];
+        e[i].style.backgroundImage = 'url('+frds['friend'][i]['src']+')';
+    }
+    e=document.getElementsByClassName('frdName');
+    for(var i=0;i<e.length;i++){
+        e[i].innerHTML = frds['friend'][i]['name'];
+    }
+    e=document.getElementsByClassName('frdLv');
+    for(var i=0;i<e.length;i++){
+        e[i].innerHTML ='Lv:&nbsp;'+ frds['friend'][i]['level'];
+    }
+    e=document.getElementsByClassName('want');
+    for(var i=0;i<e.length;i++){
+        e[i].innerHTML = frds['friend'][i]['want'];
+    }
+    e=document.getElementsByClassName('gone');
+    for(var i=0;i<e.length;i++){
+        e[i].innerHTML = frds['friend'][i]['gone'];
+    }
+    e=document.getElementsByClassName('medal');
+    for(var i=0;i<e.length;i++){
+        e[i].innerHTML = frds['friend'][i]['medal']+'枚';
+    }
+    e=document.getElementsByClassName('frdSex');
+    for(var i=0;i<e.length;i++){
+        e[i].style.setProperty('background-image','url(../imgs/icons/'+frds['friend'][i]['sex']+'.png)');
     }
 }
 function fpageWriter(){

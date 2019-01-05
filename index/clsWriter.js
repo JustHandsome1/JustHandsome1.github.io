@@ -111,7 +111,7 @@ function smallOver(self) {
 function clsImgWriter(clsName) {
     var e = document.getElementById(clsName);
     var tmpDiv = e.getElementsByClassName('clsLogo')[0];
-    tmpDiv.style.setProperty('background-image', 'url(../imgs/icons/' + clsName + '1.png)');
+    tmpDiv.style.setProperty('background-image', 'url(../imgs/icons/' + clsName + '.png)');
     tmpDiv = e.getElementsByClassName('czBig')[0];
     tmpDiv.style.setProperty('background-image', 'url(../imgs/' + clsName + '/' + clsName + '1.jpg)');
     e = e.getElementsByClassName('czSmall')[0];

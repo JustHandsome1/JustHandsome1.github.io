@@ -1,0 +1,33 @@
+div#dengluTitle{
+    font-size: 24px;
+    color: #2facb1;
+    font-weight: 900;
+    padding: 35% 0 0 0;
+    margin: 0 auto 0;
+    width: 80%;
+    height: 5%;
+}
+div#toSignin{
+    font-size: 20px;
+    line-height: 34px;
+    color: #2facb1;
+    font-weight: 400;
+    padding: 10% 0 0 0;
+    margin: 0 auto 0;
+    width: 80%;
+    height: 5%;
+    text-decoration: underline;
+    cursor: pointer;
+}
+div#toSignin:hover{
+    font-weight: 600;
+}
+div#dengluSlogan{
+    width: 400px;
+    height: 125px;
+    margin: 30% auto 0;
+    background-image: url(../imgs/sign/slogan.png);
+    background-size: 400px 125px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

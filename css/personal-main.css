@@ -29,6 +29,7 @@ ul#nav{
     float: left;
     font-size: 18px;
     transition: all 0.2s;
+    cursor: pointer;
 }
 #nav li:hover{
     color: #2facb1;

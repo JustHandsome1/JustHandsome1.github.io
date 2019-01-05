@@ -16,6 +16,17 @@ var itemInfo =
     {
         'music':[
             {
+                'name':'影视金曲<br>新春交响音乐会',
+                'short':'侠骨柔情——经典武侠<br>影视金曲新春交响音乐会 ',
+                'date': '2019-01-20',
+                'time':'19:30-21:30',
+                'location':'北京剧院 北京朝阳区安慧里三区10号（北四环安慧桥东北角）',
+                'hot':'320',
+                'kind':'音乐会',
+                'fee':'342-580',
+                'src':'../imgs/music/music0.jpg'
+            },
+            {
                 'name':'李荣浩“年少有为”<br>巡回演唱会',
                 'short':'李荣浩“年少有为”<br>北京演唱会 ',
                 'date': '2019-05-18',
@@ -174,6 +185,17 @@ var itemInfo =
         ],
         'other':[
             {
+                'name':'波西米亚DIY壁毯',
+                'short':'波西米亚壁挂毯，你能亲手创造出艺术。',
+                'date': '持续至2019.03.01',
+                'time':'14:00',
+                'location':'北京市东城区东华门街道南湾子胡同1号北京香江戴斯酒店 ',
+                'hot':'35',
+                'fee':'68',
+                'kind':'课程',
+                'src':'../imgs/other/other0.jpg'
+            },
+            {
                 'name':'奥林匹克公园环保公益活动',
                 'short':'保护环境才从我做起<br/>——奥林匹克公园环保公益活动 ',
                 'time': '持续至2019.01.26',
@@ -199,6 +221,17 @@ var itemInfo =
             }
         ],
         'drama':[
+            {
+                'name':'木偶剧《最后一头战象》',
+                'short':'海文广演艺集团、上海木偶剧团出品——木偶剧《最后一头战象》',
+                'date': '2019.01.10-01.30',
+                'time':'19:30',
+                'location':'北京 西城区 国家大剧院',
+                'hot':'53',
+                'fee':'100',
+                'kind':'其他',
+                'src':'../imgs/drama/drama0.jpg'
+            },
         	{
                 'name':'《谈判专家》',
                 'short':'开心麻花2019爆笑贺岁舞台剧<br/>《谈判专家》 ',
@@ -225,6 +258,17 @@ var itemInfo =
             }
         ],
         'lecture':[
+            {
+                'name':'朱岳：我们分到了土地：漫谈原创文学 ',
+                'short':'藏书阁读书会开设的全新活动系列的第四期',
+                'date': '2019.01.05',
+                'time':'14:00-16:00',
+                'location':'北京 东城区 库布里克书店',
+                'hot':'101',
+                'fee':'free',
+                'src':'../imgs/lecture/lecture0.jpg'
+
+            },
             {
                 'name':'首师讲坛十五',
                 'short':'漫谈古迹保护的目标与路径 ',
@@ -256,6 +300,16 @@ var itemInfo =
         ],
         'match':[
             {
+                'name':'北方搏击争霸赛',
+                'short':'FightingHeart Kickboxing 北方搏击王者争霸赛 ',
+                'time': '2019.01.12',
+                'time':'18:30',
+                'location':'北京 朝阳区 合生汇购物中心五层',
+                'hot':'67',
+                'fee':'198-1880',
+                'src':'../imgs/match/match0.jpg'
+            },
+            {
                 'name':'中国男子篮球职业联赛',
                 'short':'CBA联赛首钢vs马可波罗 ',
                 'time': '2018.12.28',
@@ -282,6 +336,17 @@ var itemInfo =
         ],
         'exhibition':[
             {
+                'name':'中国美术馆藏非洲木雕艺术展',
+                'short':'中国美术馆“典藏活化”系列展：生命之树——中国美术馆藏非洲木雕艺术展',
+                'date': '2018.12.01-2019.01.21',
+                'time':'09:00',
+                'location':'北京 东城区 中国美术馆',
+                'hot':'124',
+                'fee':'100',
+                'kind':'艺术展',
+                'src':'../imgs/exhibition/exhibition0.jpg'
+            },
+            {
                 'name':'BIGBANG10 THE EXHIBITION ',
                 'short':'BIGBANG10 THE EXHIBITION:<br/>A TO Z十周年回顾大展北京站 ',
                 'time': '2018.12.07-2019.02.24',
@@ -307,6 +372,17 @@ var itemInfo =
             }
         ],
         'movie':[
+        {
+                'name':'第三届深焦华语影评人大赛',
+                'short':'第三届深焦DeepFocus华语影评大赛',
+                'date': '持续至2019.01.07',
+                'time':'all',
+                'location':'北京 东城区 东四十一条64号',
+                'hot':'788',
+                'fee':'free',
+                'kind':'发布会',
+                'src':'../imgs/movie/movie0.jpg'
+            },
             {
                 'name':'悲伤逆流成河',
                 'short':'悲伤逆流成河：<br/>再见青春 ',
