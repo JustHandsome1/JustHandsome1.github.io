@@ -9,6 +9,7 @@
     <link href="banner.css" rel="stylesheet" type="text/css" />
     <link href="../css/top.css" rel="stylesheet" type="text/css" />
     <link href="about.css" rel="stylesheet" type="text/css" />
+    <link href="rightCards.css" rel="stylesheet" type="text/css" />
     <link href="classInner.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png"/>
     <script src="index.js"></script>
@@ -21,6 +22,7 @@
     <script src="rec.js"></script>
     <script src="classNav.js"></script> 
     <script src="clsWriter.js"></script> 
+    <script src="rightCards.js"></script> 
 	<title>Momen目门-发现生活,发现世界</title>
 </head>
 <body>
@@ -41,9 +43,9 @@
         <div id="topInner">
             <!-- <div id="zzList"></div> -->
             <ul class="nav">
-                <li id="topLogoLi"><img id="topLogo" src="../imgs/MomenLogo3.png"></li>
+                <li id="topLogoLi" onclick="jump('../index/index.html',0)"><img id="topLogo" src="../imgs/MomenLogo3.png"></li>
                 <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo" src="../imgs/photo.png"></a></li>
-                <li class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
+                <li style="display:none" class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
                 <li class="topBtn"><a href="#" onmouseover="homeOver()" onmouseout="homeOut()">关注</a></li>
                 <li class="search">
                     <input type="text">
@@ -52,20 +54,20 @@
             </ul>
             <div class="topList" id="homeList" onmouseover="homeListOver()" onmouseout="homeOut()">
                 <ul>
-                    <li><a>&nbsp;
+                    <li onclick="jumpItem('drama',1)"><a>&nbsp;
                         <div class="likePic"></div>
-                        <div class="likeTitle">favoriate1favoriate1</br>favoriate1</div>
-                        <div class="likeTime">2019.1.1</div>
+                        <div class="likeTitle">谈判专家</div>
+                        <div class="likeTime">2019年1月1</div>
                     </a></li>
-                    <li><a>&nbsp;
-                            <div class="likePic"></div>
-                            <div class="likeTitle">favoriate2</div>
-                            <div class="likeTime">2019.2.2</div>
+                    <li onclick="jumpItem('music',0)"><a>&nbsp;
+                            <div class="likePic" style="background-image:url(../imgs/music/music0.jpg)"></div>
+                            <div class="likeTitle">影视金曲，新春交响音乐会</div>
+                            <div class="likeTime">2019年1月20</div>
                     </a></li>
-                    <li><a>&nbsp;
-                            <div class="likePic"></div>
-                            <div class="likeTitle">favoriate3</div>
-                            <div class="likeTime">2019.3.3</div>
+                    <li onclick="jumpItem('music',2)"><a>&nbsp;
+                            <div class="likePic" style="background-image:url(../imgs/music/music2.jpg)"></div>
+                            <div class="likeTitle">Xmas音乐节</div>
+                            <div class="likeTime">2018年12月24</div>
                     </a></li>
                     <li><a id="seeMore">查&nbsp;看&nbsp;更&nbsp;多</a></li>
                 </ul>
@@ -83,7 +85,7 @@
                     <li><a>浏览历史</a></li>
                     <li><a>我的足迹</a></li>
                     <li><a>我的行程</a></li>
-                    <li><a id="exit">退出登录</a></li>
+                    <li><a href="../sign/signin.html" id="exit">退出登录</a></li>
                 </ul>
             </div>
         </div>
@@ -105,14 +107,14 @@
         <div id="clsNav">
             <div id="cnLine">&nbsp;</div>
             <ul id="clsNavUl">
-                <li class="cnBtn"><a id="chosenClass"><div class="cnMask"></div><div class="cnText">推&nbsp;&nbsp;荐</div>&nbsp;</a></li>
-                <li class="cnBtn"><a href="../class/class.html"><div class="cnMask"></div><div class="cnText">音&nbsp;&nbsp;乐</div>&nbsp;</a></li>
-                <li class="cnBtn"><a><div class="cnMask"></div><div class="cnText">戏&nbsp;&nbsp;剧</div>&nbsp;</a></li>
-                <li class="cnBtn"><a><div class="cnMask"></div><div class="cnText">电&nbsp;&nbsp;影</div>&nbsp;</a></li>
-                <li class="cnBtn"><a><div class="cnMask"></div><div class="cnText">展&nbsp;&nbsp;览</div>&nbsp;</a></li>
-                <li class="cnBtn"><a><div class="cnMask"></div><div class="cnText">赛&nbsp;&nbsp;事</div>&nbsp;</a></li>
-                <li class="cnBtn"><a><div class="cnMask"></div><div class="cnText">讲&nbsp;&nbsp;座</div>&nbsp;</a></li>
-                <li class="cnBtn"><a><div class="cnMask"></div><div class="cnText">其&nbsp;&nbsp;他</div>&nbsp;</a></li>
+                <!-- <li class="cnBtn"><a "><div class="cnMask"></div><div class="cnText">推&nbsp;&nbsp;荐</div>&nbsp;</a></li> -->
+                <li class="cnBtn" onclick="jump('../class/class.html#zero',0)"><a id="chosenClass"><div class="cnMask"></div><div class="cnText">音&nbsp;&nbsp;乐</div>&nbsp;</a></li>
+                <li class="cnBtn" onclick="jump('../class/class.html#one',0)"><a><div class="cnMask"></div><div class="cnText">戏&nbsp;&nbsp;剧</div>&nbsp;</a></li>
+                <li class="cnBtn" onclick="jump('../class/class.html#two',0)"><a><div class="cnMask"></div><div class="cnText">电&nbsp;&nbsp;影</div>&nbsp;</a></li>
+                <li class="cnBtn" onclick="jump('../class/class.html#three',0)"><a><div class="cnMask"></div><div class="cnText">展&nbsp;&nbsp;览</div>&nbsp;</a></li>
+                <li class="cnBtn" onclick="jump('../class/class.html#four',0)"><a><div class="cnMask"></div><div class="cnText">赛&nbsp;&nbsp;事</div>&nbsp;</a></li>
+                <li class="cnBtn" onclick="jump('../class/class.html#five',0)"><a><div class="cnMask"></div><div class="cnText">讲&nbsp;&nbsp;座</div>&nbsp;</a></li>
+                <li class="cnBtn" onclick="jump('../class/class.html#six',0)"><a><div class="cnMask"></div><div class="cnText">其&nbsp;&nbsp;他</div>&nbsp;</a></li>
             </ul>
         </div>
 
@@ -165,6 +167,44 @@
             </div>
         </div>
 
+        <!-- 右侧卡片 -->
+        <div id="rightCards">
+            <div id="tags">
+                <div id="tagsInner">
+                    <div class="rightTitle" id="tagsTitle">TAGS</div>
+                    <div id="tagsLine"></div>
+                    <div id="tagList"></div>
+                    <div id="chgTags" onclick="chgTags(10)">换&nbsp;一&nbsp;批</div>
+                </div>
+            </div>
+            <div id="wechat">
+                <div id="wechatInner">
+                    <div class="rightTitle">相关公众号</div>
+                    <div id="wechats">
+                        <!-- <div class="aWechat">
+                            <div class="wechatNum">1</div>
+                            <div class="wechatImg"></div>
+                            <div class="wechatName">我有一个名字</div>
+                        </div> -->
+                    </div>
+                    <div id="allWechat" onclick="seeAllWechats(this)">查&nbsp;看&nbsp;全&nbsp;部</div>
+                </div>
+            </div>
+            <div id="places">
+                <div id="placesInner">
+                    <div class="rightTitle">热门地点</div>
+                    <div id="placeList">
+                        <!-- <div class="aPlace">
+                            <div class="placeNum">1</div>
+                            <div class="placeImg"></div>
+                            <div class="placeName">我有一个名字</div>
+                        </div> -->
+                    </div>
+                    <div id="allPlace" onclick="seeAllPlaces(this)">查&nbsp;看&nbsp;全&nbsp;部</div>
+                </div>
+            </div>
+        </div>
+
         <!-- 戏剧 -->
         <div class="clsZone" id="drama">
         </div>
@@ -188,10 +228,34 @@
         <!-- 其他 -->
         <div class="clsZone" id="other">
         </div>
+
     </div>
 
-    <div id="about">
-        <div></div>
+    <div id="bottom">
+        <div id="btmBox">
+            <ul class="btmUl">
+                <li class="btmLi">联&nbsp;系&nbsp;我&nbsp;们</li>
+                <li class="btmLi" style="height:50px;margin-top:30px">
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/QQ2.png);"></div>
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/wechat2.png);"></div>
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/weibo2.png);"></div>
+                </li>
+            </ul>
+            <ul class="btmUl">
+                <li class="btmLi">投&nbsp;诉&nbsp;建&nbsp;议</li>
+                <li class="btmLi">投诉邮箱：1102236942@qq.com</li>
+                <li class="btmLi">投诉电话：18810837911</li>
+            </ul>
+            <ul class="btmUl">
+                <li class="btmLi">支&nbsp;持&nbsp;我&nbsp;们</li>
+                <image id="alpay" src="../imgs/alpay.jpg" style="width:100px;opacity:0.6"></image>
+            </ul>
+        </div>
     </div>
+
+
+    <!-- <div id="about">
+        <div></div>
+    </div> -->
 </body>
 </html>

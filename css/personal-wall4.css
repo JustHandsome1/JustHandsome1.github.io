@@ -1,0 +1,219 @@
+div#wall4{
+    overflow: hidden;
+}
+div#stepMap{
+    overflow: hidden;
+    width: 1196px;
+    height: 596px;
+    border: 2px #dddddd solid;
+    border-radius: 5px;
+}
+iframe#map{
+    overflow: hidden;
+    position: relative;
+    left: -10px;
+    top: -10px;
+    border-radius: 3px;
+}
+
+/* 我的足迹 */
+div#mySteps{
+    position: absolute;/*动画需要*/
+    top: 220px;
+    left: -303px;
+    height: 300px;
+    width: 350px;
+    /* background-color: rgba(206, 206, 206, 0.658); */
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    transition: all 0.8s;
+    border: 3px #2fadb1 solid;
+    cursor: default;
+}
+div#mySteps:hover{
+    left: 0px;
+}
+ul#steps{
+    float: left;
+    display: block;
+    overflow: scroll;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fafafaf5;
+}
+li.step{
+    display: block;
+    height:120px;
+    width: 300px;
+}
+li+li.step{
+    border-top: 3px #2fadb1 solid;
+}
+div#stepTitle{
+    float: left;
+    height: 250px;
+    width: 47px;
+    margin: 0;
+    padding: 50px 0 0 0;
+    font-size: 24px;
+    line-height: 50px;
+    color: #2fadb1;
+    font-weight: 500;
+    background-color: #eeeeeecc;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-left: 3px #2fadb1 solid;
+}
+
+div.stepImage{
+    float: left;
+    height: 76px;
+    width: 76px;
+    margin: 20px 10px 20px 30px;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px #dddddd solid;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+div.stepPlace{
+    float: right;
+    line-height: 30px;
+    margin: 30px 0 0 0;
+    width: 180px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+div.stepTime{
+    float: right;
+    line-height: 30px;
+    margin: 5px 0;
+    width: 180px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.step:hover .stepPlace:hover{
+    color: #2fadb1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 获得勋章 */
+div#myHoners{
+    position: absolute;/*动画需要*/
+    top: 220px;
+    right: -203px;
+    height: 300px;
+    width: 250px;
+    /* background-color: rgba(206, 206, 206, 0.658); */
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    transition: all 0.8s;
+    border: 3px #2fadb1 solid;
+    cursor: default;
+}
+div#myHoners:hover{
+    right: 0px;
+}
+ul#honers{
+    float: right;
+    display: block;
+    overflow: scroll;
+    height: 300px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fafafaf5;
+}
+li.honer{
+    display: block;
+    height:200px;
+    width: 200px;
+}
+li+li.honer{
+    border-top: 3px #2fadb1 solid;
+}
+div#honerTitle{
+    float: right;
+    height: 250px;
+    width: 47px;
+    margin: 0;
+    padding: 50px 0 0 0;
+    font-size: 24px;
+    line-height: 50px;
+    color: #2fadb1;
+    font-weight: 500;
+    background-color: #eeeeeecc;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-right: 3px #2fadb1 solid;
+}
+
+div.honerImage{
+    height: 80px;
+    width: 80px;
+    margin: 10px auto;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* border: 2px #dddddd solid; */
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+div.honerName{
+    line-height: 30px;
+    margin: 10px 0 0 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+div.honerText{
+    line-height: 20px;
+    margin: 5px 0;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+}
+div.honerTime{
+    line-height: 20px;
+    margin: 0;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+}
+.honer:hover .honerName{
+    color: #2fadb1;
+}
+.honerImage:hover{
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    z-index: 2;
+}

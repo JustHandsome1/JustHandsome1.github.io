@@ -1,3 +1,14 @@
+/* 整体修改 */
+body{
+    color: #333333;
+}
+::selection { 
+    background: #2fadb14f; 
+}
+
+
+
+
 /* ++++++++++++++++++++++++++++++ */
 /* ++++++++++++++top+++++++++++++ */
 /* ++++++++++++++++++++++++++++++ */
@@ -251,4 +262,77 @@ div.likeTime{
     margin: 0;
     font-size: 12px;
     /* background-color: rgb(172, 126, 126);  */
+}
+
+
+
+
+
+
+
+
+
+/* bottom */
+
+div#bottom{
+    clear: both;
+    margin-top: 100px;
+    height: 300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+div#btmBox{
+    height: 100%;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+ul.btmUl{
+    float: left;
+    display: block;
+    height: 240px;
+    padding: 0;
+    padding-top: 60px;
+    width: 240px;
+    margin: 0 80px;
+    list-style: none;
+    overflow: hidden;
+    /* background-color: #fff; */
+}
+li.btmLi:first-child{
+    color: #eeeeee;
+    display: block;
+    line-height:30px;
+    font-size: 20px;
+    width: 100%;
+}
+li.btmLi{
+    transition: all 0.1s;
+    color: #eeeeee;
+    display: block;
+    padding: 10px 0;
+    line-height:30px;
+    font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+}
+li.btmLi:hover{
+    text-decoration: underline;
+}
+
+div.btmIcon{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    border-radius: 100px;
+    background-color: #eeeeee;
+    transition: all 0.3s;
+}
+
+div.btmIcon:hover{
+    background-color: #fff;
 }

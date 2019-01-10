@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png"/>
+    <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png" />
     <link href="../css/top.css" rel="stylesheet" type="text/css" />
     <link href="../css/item.css" rel="stylesheet" type="text/css" />
     <link href="../css/item-main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/item-introduce.css" rel="stylesheet" type="text/css" />
+    <link href="../css/item-team.css" rel="stylesheet" type="text/css" />
+    <link href="../css/item-comment.css" rel="stylesheet" type="text/css" />
     <!-- <link href="../css/body.css" rel="stylesheet" type="text/css" /> -->
     <title>Momen目门-</title>
 </head>
+
 <body>
     <div id="top">
         <div id="topInner">
             <!-- <div id="zzList"></div> -->
             <ul class="nav">
-                <li id="topLogoLi"><a href="../index/index.html"><img id="topLogo" src="../imgs/MomenLogo3.png"></a></li>
-                <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo" src="../imgs/photo.png"></a></li>
-                <li class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
+                <li id="topLogoLi" onclick="jump('../index/index.html',0)"><img id="topLogo" src="../imgs/MomenLogo3.png"></li>
+                <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo"
+                            src="../imgs/photo.png"></a></li>
+                <li style="display:none" class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
                 <li class="topBtn"><a href="#" onmouseover="homeOver()" onmouseout="homeOut()">关注</a></li>
                 <li class="search">
                     <input type="text">
@@ -25,21 +31,21 @@
             </ul>
             <div class="topList" id="homeList" onmouseover="homeListOver()" onmouseout="homeOut()">
                 <ul>
-                    <li><a>&nbsp;
-                        <div class="likePic"></div>
-                        <div class="likeTitle">favoriate1favoriate1</br>favoriate1</div>
-                        <div class="likeTime">2019.1.1</div>
-                    </a></li>
-                    <li><a>&nbsp;
+                    <li onclick="jumpItem('drama',1)"><a>&nbsp;
                             <div class="likePic"></div>
-                            <div class="likeTitle">favoriate2</div>
-                            <div class="likeTime">2019.2.2</div>
-                    </a></li>
-                    <li><a>&nbsp;
-                            <div class="likePic"></div>
-                            <div class="likeTitle">favoriate3</div>
-                            <div class="likeTime">2019.3.3</div>
-                    </a></li>
+                            <div class="likeTitle">谈判专家</div>
+                            <div class="likeTime">2019年1月1</div>
+                        </a></li>
+                    <li onclick="jumpItem('music',0)"><a>&nbsp;
+                            <div class="likePic" style="background-image:url(../imgs/music/music0.jpg)"></div>
+                            <div class="likeTitle">影视金曲，新春交响音乐会</div>
+                            <div class="likeTime">2019年1月20</div>
+                        </a></li>
+                    <li onclick="jumpItem('music',2)"><a>&nbsp;
+                            <div class="likePic" style="background-image:url(../imgs/music/music2.jpg)"></div>
+                            <div class="likeTitle">Xmas音乐节</div>
+                            <div class="likeTime">2018年12月24</div>
+                        </a></li>
                     <li><a id="seeMore">查&nbsp;看&nbsp;更&nbsp;多</a></li>
                 </ul>
             </div>
@@ -52,54 +58,162 @@
             </div>
             <div class="topList" id="personalList" onmouseover="personalListOver()" onmouseout="personalOut()">
                 <ul>
-                    <li><a id="userName">巨蒙#18274</a></li>
+                    <li><a href="../personal/personal.html" id="userName">巨蒙#18274</a></li>
                     <li><a>浏览历史</a></li>
                     <li><a>我的足迹</a></li>
                     <li><a>我的行程</a></li>
-                    <li><a id="exit">退出登录</a></li>
+                    <li><a href="../sign/signin.html" id="exit">退出登录</a></li>
                 </ul>
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
     <div id="topBlank"></div>
 
     <div id="main">
         <div id="crumbs">
             <div id="clsIcon"></div>
-            <div id="clsName">音乐</div>
+            <div id="clsName"></div>
             <div id="clsRight"></div>
-            <div id="secCls">演唱会</div>
+            <div id="secCls"></div>
         </div>
 
         <div id="infoBox">
             <div id="infoImgBack">
                 <div id="infoImg"></div>
             </div>
-            <div id="infoName">NameNameNameName</br>NameName</div>
-            <div id="timeIcon"></div><div id="infoTime">2019.1.1 12:00</div>
-            <div id="locationIcon"></div><div id="infoLocation">北京市昌平区南丰路一号 - 北京邮电大学</div>
-            <div id="feeIcon"></div><div id="infoFee">180~800元</div>
-            <div id="infoLike" title="加入心愿墙"></div>
-            <div id="infoSch" title="加入行程"></div>
+            <div id="infoName"></div>
+            <div id="timeIcon"></div>
+            <div id="infoTime"></div>
+            <div id="locationIcon"></div>
+            <div id="infoLocation"></div>
+            <div id="feeIcon"></div>
+            <div id="infoFee"></div>
+            <div id="infoLike" title="加入心愿墙" style="background-image:url(../imgs/icons/heart1.png)"></div>
+            <div id="infoSch" title="加入行程" style="background-image:url(../imgs/icons/schedule1.png)"></div>
             <div id="payWay"><a>购票渠道 ></a></div>
         </div>
-        <div id="rec"></div>
+
+        <div id="mapBox"></div>
 
         <div id="introduce">
-            <img style="margin-left: 100px;eight:333px;width:500px" src="../imgs/music/photo1.jpg">
-            <p>李荣浩「年少有为」世界巡回演唱会将于2019年3月16日上海正式开跑，这也是继「天生李荣浩亚洲巡回演唱会」和「李荣浩有理想世界巡回演唱会」之后，职业生涯的第三轮巡演，也是第五张专辑发行后众多新歌首秀舞台，当然，前几张专辑的经典曲目也将进行重新编曲再演绎，争取让歌迷们享受到一次全新的音乐之旅。</p>
-            <img style="margin-left: 150px;height:500px;width:333px" src="../imgs/music/photo2.jpg">
-            <p>作为本次演唱会的总导演及总策划，李荣浩事事亲力亲为，严格把关各个关卡，从主视觉海报拍摄、到曲目编排，再到舞美灯光，事无巨细，极尽所能做好最好，意在给歌迷一个独特的演唱会体验，这无疑不体现对于本次巡演重视之程度。而以「年少有为」作为本次巡演的主题，也是希望大家能够珍惜身边所有，不负热望。
-                    自2013年出道以来，李荣浩专注音乐潜心创作，一年一张专辑的频率被誉为"音乐圈劳模"，而2018年新专辑《耳朵》一经推出就取得了相当可观的成绩，多首歌曲长期处于"霸榜"状态，亿万播放量更是霸气成各大榜单赢家。而在互联网时代，数字单曲是大趋势的情况下，李荣浩一直坚持做实体专辑，不随波逐流，用自己的脚踏实地去回报音乐，致敬音乐。</p>
-                </br></br></br></br></br></br></br></br></br></br>
+            <img style="margin:10px auto;" src="../imgs/music/photo1.jpg">
+            <p style="text-align:left"></p>
+            <img style="height:500px;width:333px" src="../imgs/music/photo2.jpg">
+            <p></p>
+            </br></br></br></br></br></br></br></br></br></br>
         </div>
         <div id="cutLine">
 
         </div>
         <div id="team">
+            <div id="fireIcon"></div>
+            <div id="teamTitle">火热组队中</div>
+            <div id="joinIcon"></div>
+            <div id="foundTeam">发起组队</div>
+            <div id="inviteFrd">邀请好友</div>
+            <div class="aTeam">
+                <div class="friends">
+                    <div class="aFrd" style="left:0px"></div>
+                    <div class="aFrd" style="left:25px"></div>
+                    <div class="aFrd" style="left:50px"></div>
+                    <div class="members"></div>
+                </div>
+                <div class="teamInfo">
+                    <div class="teamName"></div>
+                    <div class="teamTime"></div>
+                </div>
+                <div class="joinBtn">加&nbsp;入</div>
+            </div>
+        </div>
 
+        <div id="comment">
+            <div id="cmtTitle">大家怎么说</div>
+            <div id="cmtLine"></div>
+            <div id="cmtBtns">
+                <div class="cmtBtn">查看全部</div>
+                <div class="cmtBtn">我也要说</div>
+            </div>
+            <div class="cmtCardBox">
+                <div class="cmtCard">
+                    <div class="clip" src="../imgs/icons/clip.png"></div>
+                    <div class="cmtLeft">
+                        <div class="cmtHead"></div>
+                        <div class="cmtName"></div>
+                        <div class="cmtUnivercity">北京邮电大学</div>
+                    </div>
+                    <div class="cmtMid">
+                        <div class="cmtInner">
+                        </div>
+                        <input class="cmtInput" type="text" placeholder="评论">
+                        <div class="cmtGood" onclick="good(this)" style="background-image:url(../imgs/icons/good1.png)">
+                            <div class="goodNum">123</div>
+                        </div>
+                        <div class="cmtBad" onclick="bad(this)" style="background-image:url(../imgs/icons/bad1.png)">
+                            <div class="badNum">321</div>
+                        </div>
+                    </div>
+                    <div class="cmtRight">
+                        <div class="cmtImg"></div>
+                        <div class="cmtItem">name</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bottom">
+        <div id="btmBox">
+            <ul class="btmUl">
+                <li class="btmLi">联&nbsp;系&nbsp;我&nbsp;们</li>
+                <li class="btmLi" style="height:50px;margin-top:30px">
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/QQ2.png);"></div>
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/wechat2.png);"></div>
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/weibo2.png);"></div>
+                </li>
+            </ul>
+            <ul class="btmUl">
+                <li class="btmLi">投&nbsp;诉&nbsp;建&nbsp;议</li>
+                <li class="btmLi">投诉邮箱：1102236942@qq.com</li>
+                <li class="btmLi">投诉电话：18810837911</li>
+            </ul>
+            <ul class="btmUl">
+                <li class="btmLi">支&nbsp;持&nbsp;我&nbsp;们</li>
+                <image id="alpay" src="../imgs/alpay.jpg" style="width:100px;opacity:0.6"></image>
+            </ul>
         </div>
     </div>
 </body>
+
+
+
+<script src="../js/info-frds.js"></script>
+<script src="../js/info.js"></script>
 <script src="../js/top.js"></script>
+<!-- <script src="../js/item-map.js"></script> -->
+<script src="../js/item.js"></script>
+<script>
+    var storage = window.localStorage;
+    var itemCls = 'music';
+    var itemNum = 0;
+    itemCls = storage.getItem('itemCls');
+    itemNum = storage.getItem('itemCNum');
+    writeItem(itemCls, itemNum);
+
+
+    window.onunload = function () {
+        storage.setItem('itemCls', itemCls);
+        storage.setItem('itemCNum', itemNum);
+        alert(storage.getItem('itemCNum'));
+    };
+</script>
+
 </html>

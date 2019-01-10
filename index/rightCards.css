@@ -1,0 +1,242 @@
+div#rightCards{
+    float: right;
+    width: 350px;
+    /* background-color: #fff; */
+}
+
+
+div#tags,div#wechat,div#places{
+    float: right;
+    /* height: 500px; */
+    width: 320px;
+    margin: 100px 0;
+    border: 3px #2facb1 solid;
+    color: #333333;
+    cursor: default;
+}
+div#tagsInner,div#wechatInner,div#placesInner{
+    position: relative;
+    left: -10px;
+    top: -10px;
+    /* height: 480px; */
+    width: 300px;
+    padding: 10px;
+    border: 1px #2facb1 solid;
+    background-color: rgb(243, 243, 243);
+}
+div.rightTitle{
+    line-height: 80px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    /* background-color: #fff; */
+}
+div#tagsTitle{
+    line-height: 40px;
+    padding-top: 20px;
+}
+div#tagsLine{
+    position: relative;
+    top: -5px;
+    width: 80px;
+    height: 5px;
+    margin: 0 auto 15px;
+    background-color: #333333;
+}
+div#tagList{
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    /* background-color: #fff; */
+}
+
+div.aTag{
+    position: relative;
+    left: 0;
+    text-align: left;
+    line-height: 35px;
+    cursor: pointer;
+    color: #333333;
+    transition: all 0.2s;
+    transition: left 0.8s;
+}
+div.aTag:hover{
+    color: #2facb1;
+    text-decoration: underline;
+}
+div#chgTags{
+    width: 150px;
+    line-height: 30px;
+    margin: 3px auto;
+    font-size: 16px;
+    background-color: #2facb100;
+    color: #2facb1;
+    font-weight: 500;;
+    border-radius: 10px;
+    border: 2px #2facb1 solid;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+div#chgTags:hover{
+    background-color: #2facb1;
+    color: #ffffff;
+}
+div#chgTags:active{
+    background-color: #1f989c;
+    border: 2px #2facb100 solid;
+    color: #ffffff;
+    transition: all 0.1s;
+}
+
+/* tags */
+
+
+
+/* wechat */
+div#wechats{
+    overflow: hidden;
+    width: 100%;
+    height:360px;
+    transition: all 0.8s;
+}
+div.aWechat{
+    height: 90px;
+    width: 100%;
+    /* background-color: #fff; */
+    transition: all 0.4s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div.aWechat:hover{
+    background-color:#eeeeee;
+}
+div.wechatNum{
+    float: left;
+    margin: 20px 0;
+    width: 50px;
+    line-height: 50px;
+}
+div.wechatImg{
+    float: left;
+    margin: 15px 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    border: 2px #dddddd solid;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div.wechatName{
+    float: left;
+    margin: 20px 0;
+    width: 160px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: left;
+    transition: all 0.2s;
+}
+.aWechat:hover .wechatName{
+    color: #2facb1;
+}
+div#allWechat{
+    width: 150px;
+    line-height: 30px;
+    margin: 3px auto;
+    font-size: 16px;
+    background-color: #2facb100;
+    color: #2facb1;
+    font-weight: 500;;
+    border-radius: 10px;
+    border: 2px #2facb1 solid;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+div#allWechat:hover{
+    background-color: #2facb1;
+    color: #ffffff;
+}
+div#allWechat:active{
+    background-color: #1f989c;
+    border: 2px #2facb100 solid;
+    color: #ffffff;
+    transition: all 0.1s;
+}
+
+
+/* places */
+div#placeList{
+    overflow: hidden;
+    width: 100%;
+    height:360px;
+    transition: all 0.8s;
+}
+div.aPlace{
+    height: 90px;
+    width: 100%;
+    /* background-color: #fff; */
+    transition: all 0.4s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+div.aPlace:hover{
+    background-color:#eeeeee;
+}
+div.placeNum{
+    float: left;
+    margin: 20px 0;
+    width: 50px;
+    line-height: 50px;
+}
+div.placeImg{
+    float: left;
+    margin: 15px 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 5px;
+    border: 2px #dddddd solid;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div.placeName{
+    float: left;
+    margin: 20px 0;
+    width: 160px;
+    padding-left: 20px;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: left;
+    transition: all 0.2s;
+}
+.aPlace:hover .wechatName{
+    color: #2facb1;
+}
+div#allPlace{
+    width: 150px;
+    line-height: 30px;
+    margin: 3px auto;
+    font-size: 16px;
+    background-color: #2facb100;
+    color: #2facb1;
+    font-weight: 500;;
+    border-radius: 10px;
+    border: 2px #2facb1 solid;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+div#allPlace:hover{
+    background-color: #2facb1;
+    color: #ffffff;
+}
+div#allPlace:active{
+    background-color: #1f989c;
+    border: 2px #2facb100 solid;
+    color: #ffffff;
+    transition: all 0.1s;
+}
+
+
+

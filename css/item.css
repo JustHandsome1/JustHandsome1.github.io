@@ -8,8 +8,11 @@ body{
     background-attachment: fixed; 
     background-color: rgb(243, 243, 243);
     font-family: Microsoft YaHei;
+    
 }
-
+::selection { 
+    background: #2fadb14f; 
+}
 div#topBlank{
     height:50px;
 }

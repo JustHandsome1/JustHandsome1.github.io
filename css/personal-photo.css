@@ -19,13 +19,33 @@ div#photoBox{
     height:500px;
     width: 800px;
     margin: 10px 0 0 20px;
+    border: 3px #2facb1 solid;
+    border-radius: 10px;
+}
+div.photoInner{
+    position: relative;
+    top: 0;
+    left: 0;
+    height:500px;
+    width: 800px;
     background-image: url(../imgs/personal/photo1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 864px 648px;
-    border: 3px #2facb1 solid;
-    border-radius: 10px;
+    border-radius: 7px;
+    cursor: pointer;
 }
+div#showingImg{
+    position: fixed;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    background-size: 1037px 778px;
+    border-radius: 0;
+}
+
+
 div#photoMask{
     width: 100%;
     height: 100%;

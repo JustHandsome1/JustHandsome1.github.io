@@ -5,12 +5,12 @@ function addImageToChose(){
         // console.log(e[i]);
         e[i].style.setProperty('background-image','url(../imgs/class/bigImg/'+classEng[i]+'a.jpg)');
     }
-    e = document.getElementsByClassName('secIcon');
-    var secName = ['all','ych','yyh','xxxc','yyj']
-    for(var i=0;i<secClses[0].length+1;i++){
-        // console.log(e[i]);
-        e[i].style.setProperty('background-image','url(../imgs/class/secClass/music/'+secName[i]+'.png)');
-    }
+    // e = document.getElementsByClassName('secIcon');
+    // var secName = ['all','ych','yyh','xxxc','yyj']
+    // for(var i=0;i<secClses[0].length+1;i++){
+    //     // console.log(e[i]);
+    //     e[i].style.setProperty('background-image','url(../imgs/class/secClass/music/'+secName[i]+'.png)');
+    // }
 }
 
 //给大分类添加点击事件和鼠标悬停事件
@@ -19,11 +19,16 @@ function bigClsInit(){
     var e=document.getElementsByClassName('bigCls');
     for(var i=0;i<e.length;i++){
         // console.log(e[i]);
+        // var funcValue = "'"+clsName+"','all'";
+        // onclick="findCards('+funcValue+')">\
         e[i].setAttribute('onclick',
-        'eMove(choseBox,'+String(172*i+9)+',45),\
-        chgCls(this,'+String(i)+'),\
-        switchCard("'+classEng[i]+'")\
-        ');
+        'turnToCls('+String(i)+')');
+        // 'eMove(choseBox,'+String(172*i+9)+',45),\
+        // chgCls(this,'+String(i)+'),\
+        // secClsChoseWriter("'+ classEng[i] +'"),\
+        // switchCard("'+classEng[i]+'"),\
+        // findCards("'+classEng[i]+'","all")\
+        // ');
         // console.log(e[i]);
     }
     e=document.getElementsByClassName('clsMask');
@@ -55,7 +60,11 @@ function secClsInit(){
     var e=document.getElementsByClassName('secImg');
     for(var i=0;i<e.length;i++){
         // console.log(e[i]);
-        e[i].setAttribute('onclick','eMove(secLine,'+String(210*i+25)+',135)');
+        var beforeFunc = '';
+        if(e[i].getAttribute('onclick'))
+        beforeFunc = e[i].getAttribute('onclick')+',';
+        e[i].setAttribute('onclick',beforeFunc+
+        'eMove(secLine,'+String(210*i+25)+',135)');
     }
 }
 

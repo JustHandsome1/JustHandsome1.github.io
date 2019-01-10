@@ -5,7 +5,7 @@ div#banner{
     position: relative;
     margin: 0 auto;
     padding: 0;
-    width: 100%;
+    width: 1200px;
     height: 450px;
     /* background-image: url(../imgs/banners/banner1.jpg); */
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ div#bannerText{
     padding: 0;
     margin: 0;
     position: relative;
-    left: 68%;
+    left: 900px;
     top: 85px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.3);
 }
@@ -33,16 +33,16 @@ div#bannerText ul#bannerTextUl{
 }
 ul#bannerTextUl li.bannerTextLi{
     display: block;
-    color: #09969bc7;
+    color: #09969b;
     line-height: 60px;
     font-size: 18px;
     font-weight: 500;
     background-color: #ffffff8a;
-    transition: all 1s;
+    transition: all 0.8s;
     cursor: pointer;
 }
 ul#bannerTextUl li+li{
-    border-top: 2px #09969b4b solid;
+    border-top: 2px #09969ba8 solid;
 }
 ul#bannerTextUl li#chosenBannerText{
     color: #ffffff;

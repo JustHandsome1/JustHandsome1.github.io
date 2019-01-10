@@ -2,6 +2,7 @@
 /* ++++++++++++++main+++++++++++++ */
 /* +++++++++++++++++++++++++++++++ */
 div#main{
+    overflow: hidden;
     width: 1200px;
     padding: 0;
     margin: 0 auto;
@@ -10,8 +11,8 @@ div#main{
 div#clsNav{
     position: relative;
     margin: 10px auto 0px;
-    padding: 0px;
-    width: 800px;
+    padding: 0px 250px;
+    width: 700px;
     list-style: none;
     overflow: hidden;
     /* background-color:  #45aeb12f; */
@@ -33,7 +34,7 @@ div#clsNav div#cnLine{
 div#clsNav ul#clsNavUl{
     margin: 0px auto 0px;
     padding: 0px;
-    width: 800px;
+    width: 700px;
     height: 50px;
     list-style: none;
     overflow: hidden;

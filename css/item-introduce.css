@@ -1,0 +1,22 @@
+div#introduce{
+    overflow: hidden;
+    float: left;
+    text-align: center;
+    padding: 50px;
+    width: 700px;
+    margin-top: 30px;
+    /* background-color: #fff; */
+}
+
+img.introduceImg{
+    margin: 10px auto;
+    width: 60%;
+}
+p.introduceP{
+    text-align: left;
+    font-size: 18px;
+    text-indent:35px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+}
+

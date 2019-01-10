@@ -6,8 +6,11 @@ body{
     background-position:center;
     background-size:cover;
     background-attachment: fixed; 
+    color: #333333;
 }
-
+::selection { 
+    background: #2fadb14f; 
+}
 
 #main{
     overflow: hidden;
@@ -42,9 +45,6 @@ div.aCard{
     height: 50%;
     width: 100%px;
 }
-div#signin{
-    /* background-color: rgb(202, 121, 121); */
-}
 div#signup{
     /* background-color: rgb(121, 202, 184); */
     background-image: url(../imgs/sign/m.png);
@@ -58,9 +58,6 @@ div#denglu{
     background-size: 370px 370px;
     background-repeat: no-repeat;
     background-position: center 20%;
-}
-div#zhuce{
-    /* background-color: rgba(194, 202, 121, 0.082); */
 }
 
 div.littleLogo{

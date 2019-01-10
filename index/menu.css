@@ -69,11 +69,11 @@
 #menu li:hover a{
     color: white;
     font-weight: 500;
-    background-color: #45adb1ce;
+    background-color: #2fadb1bd;
 }
 #menu li a.currentY{
     color: white;
     font-weight: 500;
-    background-color: #45adb1ce;
+    background-color: #2facb1bd;
 }
 

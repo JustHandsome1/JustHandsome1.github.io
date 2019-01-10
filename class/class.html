@@ -1,23 +1,42 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png"/>
+    <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png" />
     <link href="../css/top.css" rel="stylesheet" type="text/css" />
     <link href="../css/class-chose.css" rel="stylesheet" type="text/css" />
-	<link href="../css/class-main.css" rel="stylesheet" type="text/css" />
+    <link href="../css/class-main.css" rel="stylesheet" type="text/css" />
     <link href="../css/class-body.css" rel="stylesheet" type="text/css" />
     <link href="../css/class-cards.css" rel="stylesheet" type="text/css" />
-	<title>Momen目门-分类</title>
+    <link href="../css/class-codes.css" rel="stylesheet" type="text/css" />
+    <title>Momen目门-分类</title>
 </head>
+
 <body>
+    <div id="codes">
+        <div id="nothing"></div>
+        <div class="code" id="zero"></div>
+        <div class="code" id="one"></div>
+        <div class="code" id="two"></div>
+        <div class="code" id="three"></div>
+        <div class="code" id="four"></div>
+        <div class="code" id="five"></div>
+        <div class="code" id="six"></div>
+    </div>
+
+
+
+
+
     <div id="top">
         <div id="topInner">
             <!-- <div id="zzList"></div> -->
             <ul class="nav">
-                <li id="topLogoLi"><a href="../index/index.html"><img id="topLogo" src="../imgs/MomenLogo3.png"></a></li>
-                <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo" src="../imgs/photo.png"></a></li>
-                <li class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
+                <li id="topLogoLi" onclick="jump('../index/index.html',0)"><img id="topLogo" src="../imgs/MomenLogo3.png"></li>
+                <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo"
+                            src="../imgs/photo.png"></a></li>
+                <li style="display:none" class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
                 <li class="topBtn"><a href="#" onmouseover="homeOver()" onmouseout="homeOut()">关注</a></li>
                 <li class="search">
                     <input type="text">
@@ -26,21 +45,21 @@
             </ul>
             <div class="topList" id="homeList" onmouseover="homeListOver()" onmouseout="homeOut()">
                 <ul>
-                    <li><a>&nbsp;
-                        <div class="likePic"></div>
-                        <div class="likeTitle">favoriate1favoriate1</br>favoriate1</div>
-                        <div class="likeTime">2019.1.1</div>
-                    </a></li>
-                    <li><a>&nbsp;
+                    <li onclick="jumpItem('drama',1)"><a>&nbsp;
                             <div class="likePic"></div>
-                            <div class="likeTitle">favoriate2</div>
-                            <div class="likeTime">2019.2.2</div>
-                    </a></li>
-                    <li><a>&nbsp;
-                            <div class="likePic"></div>
-                            <div class="likeTitle">favoriate3</div>
-                            <div class="likeTime">2019.3.3</div>
-                    </a></li>
+                            <div class="likeTitle">谈判专家</div>
+                            <div class="likeTime">2019年1月1</div>
+                        </a></li>
+                    <li onclick="jumpItem('music',0)"><a>&nbsp;
+                            <div class="likePic" style="background-image:url(../imgs/music/music0.jpg)"></div>
+                            <div class="likeTitle">影视金曲，新春交响音乐会</div>
+                            <div class="likeTime">2019年1月20</div>
+                        </a></li>
+                    <li onclick="jumpItem('music',2)"><a>&nbsp;
+                            <div class="likePic" style="background-image:url(../imgs/music/music2.jpg)"></div>
+                            <div class="likeTitle">Xmas音乐节</div>
+                            <div class="likeTime">2018年12月24</div>
+                        </a></li>
                     <li><a id="seeMore">查&nbsp;看&nbsp;更&nbsp;多</a></li>
                 </ul>
             </div>
@@ -53,15 +72,21 @@
             </div>
             <div class="topList" id="personalList" onmouseover="personalListOver()" onmouseout="personalOut()">
                 <ul>
-                    <li><a id="userName">巨蒙#18274</a></li>
+                    <li><a href="../personal/personal.html" id="userName">巨蒙#18274</a></li>
                     <li><a>浏览历史</a></li>
                     <li><a>我的足迹</a></li>
                     <li><a>我的行程</a></li>
-                    <li><a id="exit">退出登录</a></li>
+                    <li><a href="../sign/signin.html" id="exit">退出登录</a></li>
                 </ul>
             </div>
         </div>
     </div>
+
+
+
+
+
+
     <div id="topBlank"></div>
 
     <div id="clsChose">
@@ -88,28 +113,8 @@
         </div>
         <div id="choseBox">音&nbsp;乐</div>
     </div>
+    <!-- 第二类选择 -->
     <div id="secClsChose">
-        <div class="secImg">
-            <div class="secIcon"></div>
-            <div class="secName">全部&nbsp;&nbsp;</div>
-        </div>
-        <div class="secImg">
-            <div class="secIcon"></div>
-            <div class="secName">演唱会&nbsp;</div>
-        </div>
-        <div class="secImg">
-            <div class="secIcon"></div>
-            <div class="secName">音乐会&nbsp;</div>
-        </div>
-        <div class="secImg">
-            <div class="secIcon"></div>
-            <div class="secName">小型现场</div>
-        </div>
-        <div class="secImg">
-            <div class="secIcon"></div>
-            <div class="secName">音乐节&nbsp;</div>
-        </div>
-        <div id="secLine"></div>
     </div>
     <div id="cutLine"></div>
 
@@ -122,8 +127,8 @@
 
         <!-- 卡片哈哈哈哈哈哈哈哈哈哈哈哈 -->
         <div id="cards">
-            <div class="cardRow">
-                <a href="../404/404.html"><div class="card">
+            <!-- <div class="cardRow"> -->
+            <!-- <a><div class="card">
                     <div class="cardInner">
                         <div class="cPic"></div>
                         <div class="cName"></div>
@@ -133,59 +138,43 @@
                         <div class="cHeart"></div>
                         <div class="cSchedule"></div>
                     </div>
-                </div></a>
-                <a href="../item/item.html"><div class="card">
-                    <div class="cardInner">
+                </div></a>-->
+            <!-- </div> -->
 
-                    </div>
-                </div><a>
-            </div>
-            <div class="cardRow">
-                <div class="card">
-                    <div class="cardInner">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardInner">
-
-                    </div>
-                </div>
-            </div>
-            <div class="cardRow">
-                <div class="card">
-                    <div class="cardInner">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardInner">
-
-                    </div>
-                </div>
-            </div>
-            <div class="cardRow">
-                <div class="card">
-                    <div class="cardInner">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="cardInner">
-
-                    </div>
-                </div>
-            </div>
         </div>
+        <!-- <div id="about"></div> -->
 
-        <div id="pageNum"></div>
+        <!-- <div id="slogan"></div> -->
     </div>
-    <div id="about"></div>
-
-    <!-- <div id="slogan"></div> -->
+    <div id="bottom">
+        <div id="btmBox">
+            <ul class="btmUl">
+                <li class="btmLi">联&nbsp;系&nbsp;我&nbsp;们</li>
+                <li class="btmLi" style="height:50px;margin-top:30px">
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/QQ2.png);"></div>
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/wechat2.png);"></div>
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/weibo2.png);"></div>
+                </li>
+            </ul>
+            <ul class="btmUl">
+                <li class="btmLi">投&nbsp;诉&nbsp;建&nbsp;议</li>
+                <li class="btmLi">投诉邮箱：1102236942@qq.com</li>
+                <li class="btmLi">投诉电话：18810837911</li>
+            </ul>
+            <ul class="btmUl">
+                <li class="btmLi">支&nbsp;持&nbsp;我&nbsp;们</li>
+                <image id="alpay" src="../imgs/alpay.jpg" style="width:100px;opacity:0.6"></image>
+            </ul>
+        </div>
+    </div>
 </body>
-<script src="../js/JQuery.js"></script>
 <script src="../js/info.js"></script>
 <script src="../js/top.js"></script>
 <script src="../js/class.js"></script>
 <script src="../js/class-chose.js"></script>
 <script src="../js/class-cardsWriter.js"></script>
 <script src="../js/class-card.js"></script>
+<script src="../js/class-choseWriter.js"></script>
+<script src="../js/class-codes.js"></script>
+
 </html>

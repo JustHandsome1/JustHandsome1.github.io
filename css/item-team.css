@@ -1,0 +1,171 @@
+div#team{
+    float: left;
+    width: 350px;
+    height: 800px;
+    margin-top: 30px;
+    /* background-color: rgb(214, 214, 214); */
+    cursor: default;
+}
+
+div#fireIcon{
+    float: left;
+    height: 40px;
+    width: 40px;
+    margin: 20px 0 0 70px;
+    background-image: url(../imgs/icons/fire.png);
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.9;
+}
+div#teamTitle{
+    float: left;
+    height: 40px;
+    width: 160px;
+    margin: 20px 0 0 0;
+    font-size: 26px;
+    font-weight: 500;
+}
+div#joinIcon{
+    float: left;
+    clear: left;
+    height: 40px;
+    width: 40px;
+    margin: 20px 0 0 40px;
+    background-image: url(../imgs/icons/join.png);
+    background-size: 80% 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div#foundTeam,div#inviteFrd{
+    float: left;
+    width: 84px;
+    line-height: 28px;
+    margin: 24px 0 4px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px #2facb1 solid;
+    color: #2facb1;
+    border-radius: 5px;
+    transition: all 0.2s;
+    box-shadow: 0 0 0;
+    cursor: pointer;
+}
+div#foundTeam:hover,div#inviteFrd:hover{
+    box-shadow: 1px 1px 3px #333333;
+    background-color: #2fadb1;
+    color: white;
+}
+div#foundTeam:active,div#inviteFrd:active{
+    box-shadow: 0 0 0;
+    transition: all 0.1s;
+}
+
+
+
+
+div.aTeam{
+    /* background-color: rgb(116, 64, 64); */
+    width: 350px;
+    height: 80px;
+    margin: 20px auto 0;
+    float: left;
+    clear: both;
+}
+div.friends{
+    position: relative;
+    /* background-color: rgb(35, 61, 175); */
+    width: 115px;
+    height: 80px;
+    margin: 0 0 0 10px;
+    float: left;
+}
+div.aFrd{
+    position: absolute;
+    top: 0px;
+    height: 60px;
+    width: 60px;
+    margin: 0 0;
+    float: left;
+    background-image: url(../imgs/friend/friend1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+div.aFrd:hover{
+    transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    z-index: 2;
+}
+div.aFrd:active{
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transition: all 0.05s;
+    z-index: 2;
+}
+div.members{
+    position: relative;
+    right: 0px;
+    /* float: right; */
+    /* text-align: right; */
+    width: 100%;
+    font-size: 12px;
+    margin: 60px 0 0 0;
+}
+div.teamInfo{
+    position: relative;
+    /* background-color: rgb(35, 61, 175); */
+    width: 150px;
+    height: 80px;
+    margin: 0 0 0 0;
+    float: left;
+}
+div.teamName{
+    margin: 10px 0 0 0;
+    height: 40px;
+    width: 100%;
+    line-height: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+div.teamName:hover{
+    text-decoration: underline;
+}
+div.teamTime{
+    padding: 0 10%;
+    margin-top: 5px;
+    line-height: 20px;
+    font-size: 14px;
+    /* text-align: right; */
+}
+div.joinBtn{
+    float: left;
+    line-height: 24px;
+    width: 50px;
+    margin: 22px 0 38px 15px;
+    border: 3px #2facb1 solid;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2facb1;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    /* background-color: rgb(168, 64, 64); */
+}
+div.joinBtn:hover{
+    background-color: #2facb1;
+    color: #ffffff;
+}
+div.joinBtn:active{
+    background-color: #2facb1;
+    color: #a4dee0;
+    transition: all 0.05s;
+}

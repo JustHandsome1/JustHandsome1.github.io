@@ -77,3 +77,23 @@ function topPersonalDisappear(e){
         e.style.setProperty('display','none');
     },500);
 }
+
+
+
+
+//点击跳转
+function jump(href,target){
+    if(target==0){
+        window.location.href=href;
+    }else if(target==1){
+        window.open(href);
+    }
+}
+
+//跳转到指定item
+function jumpItem(itemCls,itemNum){
+    var storage = window.localStorage;
+    storage.setItem('itemCls', itemCls);
+    storage.setItem('itemCNum', String(itemNum));
+    window.open('../item/item.html');
+}

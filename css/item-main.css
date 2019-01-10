@@ -2,6 +2,7 @@ div#main{
     width: 1200px;
     /* height: 3000px; */
     margin: 0 auto;
+    overflow: hidden;
     /* border: 1px #2facb1 solid; */
 }
 
@@ -16,10 +17,11 @@ div#clsIcon{
     float: left;
     height: 60px;
     width: 60px;
-    background-image: url(../imgs/icons/music.png);
+    /* background-image: url(../imgs/icons/music.png); */
     background-size: 80% 80%;
     background-repeat: no-repeat;
     background-position: center center;
+    cursor: pointer;
     /* background-color: rgb(255, 251, 0); */
 }
 div#clsName{
@@ -28,6 +30,7 @@ div#clsName{
     font-size: 36px;
     color: #2facb1;
     width: 80px;
+    cursor: pointer;
     /* background-color: rgb(0, 247, 255); */
 }
 div#clsRight{
@@ -45,6 +48,7 @@ div#secCls{
     line-height: 40px;
     color: #2facb1;
     width: 80px;
+    cursor: pointer;
     /* background-color: rgb(6, 255, 48); */
 }
 
@@ -64,11 +68,14 @@ div#secCls{
 
 
 div#infoBox{
+    overflow: hidden;
     width: 794px;
     float: left;
     padding-bottom: 20px;
+    margin: 0 auto;
     color: #333333;
     border: 3px #2facb1 dashed;
+    cursor: default;
 }
 div#infoImgBack{
     margin: 50px 0 0 60px;
@@ -83,46 +90,47 @@ div#infoImg{
     bottom: 10px;
     width: 100%;
     height: 100%;
-    background-image: url(../imgs/music/music1.jpg);
+    /* background-image: url(../imgs/music/music1.jpg); */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-shadow: 3px 3px 5px #666666b4;
 }
 div#infoName{
     text-align: left;
-    margin: 50px 0 0 20px;
+    margin: 50px 0 0 40px;
     float: left;
-    width: 400px;
+    text-align: center;
+    width: 380px;
     height: 70px;
     line-height: 35px;
-    font-size: 28px;
+    font-size: 26px;
     /* background-color: #2facb1; */
 }
 div#timeIcon{
     float: left;
-    margin: 50px 0 0 30px;
+    margin: 50px 0 0 50px;
     width: 30px;
     height: 30px;
-    background-image: url(../imgs/icons/right3.png);
-    background-size: 90% 90%;
+    background-image: url(../imgs/icons/dateandtime.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 div#locationIcon{
     float: left;
-    margin: 30px 0 0 30px;
+    margin: 30px 0 0 50px;
     width: 30px;
     height: 30px;
-    background-image: url(../imgs/icons/right3.png);
-    background-size: 90% 90%;
+    background-image: url(../imgs/icons/location.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 div#feeIcon{
     float: left;
-    margin: 30px 0 0 30px;
+    margin: 30px 0 0 50px;
     width: 30px;
     height: 30px;
-    background-image: url(../imgs/icons/right3.png);
-    background-size: 90% 90%;
+    background-image: url(../imgs/icons/fee.png);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 div#infoTime{
@@ -163,8 +171,10 @@ div#infoLike{
     width: 40px;
     height: 40px;
     background-image: url(../imgs/icons/heart1.png);
-    background-size: 90% 90%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.1s;
 }
 div#infoSch{
     float: left;
@@ -174,6 +184,8 @@ div#infoSch{
     background-image: url(../imgs/icons/schedule1.png);
     background-size: 90% 90%;
     background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.1s;
 }
 div#payWay{
     text-align: right;
@@ -185,6 +197,7 @@ div#payWay{
     color: #2facb1;
     line-height: 22px;
     font-size: 18px;
+    cursor: pointer;
 }
 div#payWay:hover{
     text-decoration: underline;
@@ -205,12 +218,15 @@ div#payWay:hover{
 
 
 
-div#rec{
+div#mapBox{/* 暂时隐藏掉 */
+    overflow: hidden;
     width: 344px;
     margin-left: 50px;
     float: left;
     height: 440px;
-    border: 3px #2facb1 dashed;
+    padding: 0;
+    margin: 2px 2px 2px 52px;
+    border: 1px #2facb1 solid;
 }
 
 
@@ -238,15 +254,6 @@ div#rec{
 
 
 
-div#introduce{
-    float: left;
-    text-align: left;
-    padding: 50px;
-    width: 700px;
-    height: 800px;
-    margin-top: 30px;
-    /* background-color: #fff; */
-}
 
 
 
@@ -275,22 +282,9 @@ div#cutLine{
     float: left;
     margin: 0 23px;
     width: 4px;
-    height: 500px;
+    height: 600px;
     margin-top: 30px;background: -webkit-linear-gradient(#ffffff00 0%,#2facb1ff 40%,#2facb1ff 60%,#ffffff00 100%);
     background: -moz-linear-gradient(#ffffff00 0%,#2facb1ff 40%,#2facb1ff 60%,#ffffff00 100%);
     background: -o-linear-gradient(#ffffff00 0%,#2facb1ff 40%,#2facb1ff 60%,#ffffff00 100%);
     background: linear-gradient(#ffffff00 0%,#2facb1ff 40%,#2facb1ff 60%,#ffffff00 100%);
-    
-}
-div#team{
-    float: left;
-    width: 350px;
-    height: 800px;
-    margin-top: 30px;
-    background-color: rgb(214, 214, 214);
-}
-
-p{
-    font-size: 18px;
-    text-indent:35px;
 }

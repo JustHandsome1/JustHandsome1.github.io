@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我的足迹</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=S49mhx8MwhakM1uWKRI7KNZ4OUqpSIut"></script>
+</head>
+
+<body>
+    <div style="width:1250px;height:700px;border:#ccc solid 0px;font-size:12px" id="map"></div>
+</body>
+<script type="text/javascript">
+    function initMap() {
+        createMap();
+        setMapEvent();
+        addMapControl();
+        addMapOverlay();
+    }
+    function createMap() {
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(116.401917,39.975144),12);
+    }
+    function setMapEvent() {
+        map.enableScrollWheelZoom();
+        map.enableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target, window) {
+        target.addEventListener("click", function () {
+            target.openInfoWindow(window);
+        });
+    }
+    function addMapOverlay() {
+        var markers = [
+        {content:"2017年3月20日来过这里",title:"故宫博物院",imageOffset: {width:-23,height:-21},position:{lat:39.920756,lng:116.405763}},
+        {content:"2018年9月2日来过这里",title:"北京动物园",imageOffset: {width:-23,height:-21},position:{lat:40.089671,lng:116.195135}},
+        {content:"2017年11月9日来过这里",title:"奥林匹克森林公园",imageOffset: {width:-23,height:-21},position:{lat:40.029092,lng:116.398583}},
+        {content:"每天做梦都想去",title:"北京邮电大学",imageOffset: {width:0,height:-21},position:{lat:40.161832,lng:116.290571}},
+        {content:"计划在2018年1月19日前往",title:"北京欢乐谷",imageOffset: {width:0,height:-21},position:{lat:39.875119,lng:116.501572}},
+        {content:"2018年11月3日去过",title:"798艺术区",imageOffset: {width:-23,height:-21},position:{lat:39.991287,lng:116.502096}},
+        {content:"行程“放假回家”  2018年1月25日",title:"北京西站",imageOffset: {width:0,height:-21},position:{lat:39.900569,lng:116.32919}}
+      ];
+        for (var index = 0; index < markers.length; index++) {
+            var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+                    imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+                })
+            });
+            var label = new BMap.Label(markers[index].title, { offset: new BMap.Size(25, 5) });
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+            marker.setLabel(label);
+            addClickHandler(marker, infoWindow);
+            map.addOverlay(marker);
+        };
+        var plOpts = [
+        ];
+        var plPath = [
+        ];
+        for (var index = 0; index < plOpts.length; index++) {
+            var polyline = new BMap.Polyline(plPath[index], plOpts[index]);
+            map.addOverlay(polyline);
+        }
+    }
+    function addMapControl() {
+        var scaleControl = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: 0 });
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: false });
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+</script>
+
+</html>

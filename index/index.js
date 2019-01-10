@@ -70,12 +70,18 @@ window.onload = function(){
     recInnit();
     //-------clsZone------
     czInit();
-    weeklyRankInit();
     clsImgInit();
     // console.log('here');
     // =============================================
     setInterval(timeLuancher1,30);
     changer = setInterval(autoChg,5000);//banner自动轮播
+
+
+
+    //--------rightCards--------
+    writeTags(10);
+    writeWechat();
+    writePlace();
 }
 
 

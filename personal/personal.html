@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
-    <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png"/>
+    <link rel="icon" type="image/x-icon" href="../imgs/MomenLogo2.png" />
     <link href="../css/top.css" rel="stylesheet" type="text/css" />
     <link href="../css/personal.css" rel="stylesheet" type="text/css" />
     <link href="../css/personal-photo.css" rel="stylesheet" type="text/css" />
@@ -13,14 +14,16 @@
     <link href="../css/personal-wall4.css" rel="stylesheet" type="text/css" />
     <title>Momen目门-我的主页</title>
 </head>
+
 <body>
     <div id="top">
         <div id="topInner">
             <!-- <div id="zzList"></div> -->
             <ul class="nav">
-                <li id="topLogoLi"><a href="../index/index.html"><img id="topLogo" src="../imgs/MomenLogo3.png"></a></li>
-                <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo" src="../imgs/photo.png"></a></li>
-                <li class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
+                <li id="topLogoLi" onclick="jump('../index/index.html',0)"><img id="topLogo" src="../imgs/MomenLogo3.png"></li>
+                <li class="topBtn"><a href="#" onmouseover="personalOver()" onmouseout="personalOut()"><img id="photo"
+                            src="../imgs/photo.png"></a></li>
+                <li style="display:none" class="topBtn"><a href="#" onmouseover="socialOver()" onmouseout="socialOut()">社区</a></li>
                 <li class="topBtn"><a href="#" onmouseover="homeOver()" onmouseout="homeOut()">关注</a></li>
                 <li class="search">
                     <input type="text">
@@ -29,21 +32,21 @@
             </ul>
             <div class="topList" id="homeList" onmouseover="homeListOver()" onmouseout="homeOut()">
                 <ul>
-                    <li><a>&nbsp;
-                        <div class="likePic"></div>
-                        <div class="likeTitle">favoriate1favoriate1</br>favoriate1</div>
-                        <div class="likeTime">2019.1.1</div>
-                    </a></li>
-                    <li><a>&nbsp;
+                    <li onclick="jumpItem('drama',1)"><a>&nbsp;
                             <div class="likePic"></div>
-                            <div class="likeTitle">favoriate2</div>
-                            <div class="likeTime">2019.2.2</div>
-                    </a></li>
-                    <li><a>&nbsp;
-                            <div class="likePic"></div>
-                            <div class="likeTitle">favoriate3</div>
-                            <div class="likeTime">2019.3.3</div>
-                    </a></li>
+                            <div class="likeTitle">谈判专家</div>
+                            <div class="likeTime">2019年1月1</div>
+                        </a></li>
+                    <li onclick="jumpItem('music',0)"><a>&nbsp;
+                            <div class="likePic" style="background-image:url(../imgs/music/music0.jpg)"></div>
+                            <div class="likeTitle">影视金曲，新春交响音乐会</div>
+                            <div class="likeTime">2019年1月20</div>
+                        </a></li>
+                    <li onclick="jumpItem('music',2)"><a>&nbsp;
+                            <div class="likePic" style="background-image:url(../imgs/music/music2.jpg)"></div>
+                            <div class="likeTitle">Xmas音乐节</div>
+                            <div class="likeTime">2018年12月24</div>
+                        </a></li>
                     <li><a id="seeMore">查&nbsp;看&nbsp;更&nbsp;多</a></li>
                 </ul>
             </div>
@@ -56,11 +59,11 @@
             </div>
             <div class="topList" id="personalList" onmouseover="personalListOver()" onmouseout="personalOut()">
                 <ul>
-                    <li><a id="userName">巨蒙#18274</a></li>
+                    <li><a href="../personal/personal.html" id="userName">巨蒙#18274</a></li>
                     <li><a>浏览历史</a></li>
                     <li><a>我的足迹</a></li>
                     <li><a>我的行程</a></li>
-                    <li><a href="../sign/signin.html"id="exit">退出登录</a></li>
+                    <li><a href="../sign/signin.html" id="exit">退出登录</a></li>
                 </ul>
             </div>
         </div>
@@ -81,7 +84,9 @@
             </div>
         </div>
         <div id="photoBox">
-            <div id="photoMask"></div>
+            <div class="photoInner" id="" onclick="showImg(this)">
+                <div id="photoMask"></div>
+            </div>
         </div>
     </div>
 
@@ -104,8 +109,10 @@
                             <div class="aWishPage">
                                 <div class="wishes" id="wishes1">
                                 </div>
-                                <a href="../item/item.html"><div class="wishes" id="wishes2">
-                                </div></a>
+                                <a href="../item/item.html">
+                                    <div class="wishes" id="wishes2">
+                                    </div>
+                                </a>
                                 <div class="wishes" id="wishes3">
                                 </div>
                                 <div class="wishes" id="wishes4">
@@ -185,8 +192,198 @@
                         <a class="frdPageNum"></a>
                     </div>
                 </div>
-                <div class="wall" id="wall4"></div>
+                <div class="wall" id="wall4">
+                    <div id="stepMap">
+                        <!-- <iframe id="map" src="../map/personal-map.html" frameBorder="0" width="1250px" scrolling="no"
+                            height="700px"></iframe> -->
+
+
+
+
+
+
+
+
+
+                        <!DOCTYPE html>
+                        <html xmlns="http://www.w3.org/1999/xhtml">
+
+                        <head>
+                            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                            <title>我的足迹</title>
+                            <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=S49mhx8MwhakM1uWKRI7KNZ4OUqpSIut"></script>
+                        </head>
+
+                        <body>
+                            <div style="width:1250px;height:700px;border:#ccc solid 0px;font-size:12px" id="map"></div>
+                        </body>
+                        <script type="text/javascript">
+                            function initMap() {
+                                createMap();
+                                setMapEvent();
+                                addMapControl();
+                                addMapOverlay();
+                            }
+                            function createMap() {
+                                map = new BMap.Map("map");
+                                map.centerAndZoom(new BMap.Point(116.401917, 39.975144), 12);
+                            }
+                            function setMapEvent() {
+                                map.enableScrollWheelZoom();
+                                map.enableKeyboard();
+                                map.enableDragging();
+                                map.enableDoubleClickZoom()
+                            }
+                            function addClickHandler(target, window) {
+                                target.addEventListener("click", function () {
+                                    target.openInfoWindow(window);
+                                });
+                            }
+                            function addMapOverlay() {
+                                var markers = [
+                                    { content: "2017年3月20日来过这里", title: "故宫博物院", imageOffset: { width: -23, height: -21 }, position: { lat: 39.920756, lng: 116.405763 } },
+                                    { content: "2018年9月2日来过这里", title: "北京动物园", imageOffset: { width: -23, height: -21 }, position: { lat: 39.947735, lng: 116.343376 } },
+                                    { content: "2017年11月9日来过这里", title: "奥林匹克森林公园", imageOffset: { width: -23, height: -21 }, position: { lat: 40.029092, lng: 116.398583 } },
+                                    { content: "每天做梦都想去", title: "北京邮电大学", imageOffset: { width: 0, height: -21 }, position: { lat: 40.161832, lng: 116.290571 } },
+                                    { content: "计划在2018年1月19日前往", title: "北京欢乐谷", imageOffset: { width: 0, height: -21 }, position: { lat: 39.875119, lng: 116.501572 } },
+                                    { content: "2018年11月3日去过", title: "798艺术区", imageOffset: { width: -23, height: -21 }, position: { lat: 39.991287, lng: 116.502096 } },
+                                    { content: "行程“放假回家”  2018年1月25日", title: "北京西站", imageOffset: { width: 0, height: -21 }, position: { lat: 39.900569, lng: 116.32919 } }
+                                ];
+                                for (var index = 0; index < markers.length; index++) {
+                                    var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+                                    var marker = new BMap.Marker(point, {
+                                        icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+                                            imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+                                        })
+                                    });
+                                    var label = new BMap.Label(markers[index].title, { offset: new BMap.Size(25, 5) });
+                                    var opts = {
+                                        width: 200,
+                                        title: markers[index].title,
+                                        enableMessage: false
+                                    };
+                                    var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+                                    marker.setLabel(label);
+                                    addClickHandler(marker, infoWindow);
+                                    map.addOverlay(marker);
+                                };
+                                var plOpts = [
+                                ];
+                                var plPath = [
+                                ];
+                                for (var index = 0; index < plOpts.length; index++) {
+                                    var polyline = new BMap.Polyline(plPath[index], plOpts[index]);
+                                    map.addOverlay(polyline);
+                                }
+                            }
+                            function addMapControl() {
+                                var scaleControl = new BMap.ScaleControl({ anchor: BMAP_ANCHOR_BOTTOM_LEFT });
+                                scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+                                map.addControl(scaleControl);
+                                var navControl = new BMap.NavigationControl({ anchor: BMAP_ANCHOR_TOP_LEFT, type: 0 });
+                                map.addControl(navControl);
+                                var overviewControl = new BMap.OverviewMapControl({ anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: false });
+                                map.addControl(overviewControl);
+                            }
+                            var map;
+                            initMap();
+                        </script>
+
+                        </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div id="mySteps">
+                            <ul id="steps">
+                                <li class="step" onclick="mapTo(116.405763,39.920756,15)">
+                                    <div class="stepImage" style="background-image:url(../imgs/step/1.png)"></div>
+                                    <div class="stepPlace">故宫博物院</div>
+                                    <div class="stepTime">2017年3月20日</div>
+                                </li>
+                                <li class="step" onclick="mapTo(116.398583,40.029092,15)">
+                                    <div class="stepImage" style="background-image:url(../imgs/step/2.png)"></div>
+                                    <div class="stepPlace">奥林匹克森林公园</div>
+                                    <div class="stepTime">2017年11月9日</div>
+                                </li>
+                                <li class="step" onclick="mapTo(116.343376,39.947735,15)">
+                                    <div class="stepImage" style="background-image:url(../imgs/step/3.png)"></div>
+                                    <div class="stepPlace">北京动物园</div>
+                                    <div class="stepTime">2018年9月2日</div>
+                                </li>
+                                <li class="step" onclick="mapTo(116.502096,39.991287,15)">
+                                    <div class="stepImage" style="background-image:url(../imgs/step/4.png)"></div>
+                                    <div class="stepPlace">798艺术区</div>
+                                    <div class="stepTime">2018年11月3日</div>
+                                </li>
+                            </ul>
+                            <div id="stepTitle">我的足迹</div>
+                        </div>
+                        <div id="myHoners">
+                            <ul id="honers">
+                                <li class="honer">
+                                    <div class="honerImage" style="background-image:url(../imgs/honer/1.png)"></div>
+                                    <div class="honerName">精神Momer</div>
+                                    <div class="honerText">累计在目门报名参加活动20次</div>
+                                    <div class="honerTime">2018年12月28日</div>
+                                </li>
+                                <li class="honer">
+                                    <div class="honerImage" style="background-image:url(../imgs/honer/2.png)"></div>
+                                    <div class="honerName">音乐达人</div>
+                                    <div class="honerText">累计参加5场音乐类活动</div>
+                                    <div class="honerTime">2018年9月26日</div>
+                                </li>
+                                <li class="honer">
+                                    <div class="honerImage" style="background-image:url(../imgs/honer/3.png)"></div>
+                                    <div class="honerName">不篮球，不欢乐</div>
+                                    <div class="honerText">累计观看5场篮球比赛</div>
+                                    <div class="honerTime">2018年3月20日</div>
+                                </li>
+                            </ul>
+                            <div id="honerTitle">获得勋章</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+
+
+    <div id="bottom">
+        <div id="btmBox">
+            <ul class="btmUl">
+                <li class="btmLi">联&nbsp;系&nbsp;我&nbsp;们</li>
+                <li class="btmLi" style="height:50px;margin-top:30px">
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/QQ2.png);"></div>
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/wechat2.png);"></div>
+                    <div class="btmIcon" style="background-image: url(../imgs/sign/weibo2.png);"></div>
+                </li>
+            </ul>
+            <ul class="btmUl">
+                <li class="btmLi">投&nbsp;诉&nbsp;建&nbsp;议</li>
+                <li class="btmLi">投诉邮箱：1102236942@qq.com</li>
+                <li class="btmLi">投诉电话：18810837911</li>
+            </ul>
+            <ul class="btmUl">
+                <li class="btmLi">支&nbsp;持&nbsp;我&nbsp;们</li>
+                <image id="alpay" src="../imgs/alpay.jpg" style="width:100px;opacity:0.6"></image>
+            </ul>
         </div>
     </div>
 </body>
@@ -197,4 +394,27 @@
 <script src="../js/personal-nav.js"></script>
 <script src="../js/personal-mainWriter.js"></script>
 <script src="../js/personal.js"></script>
+<script>
+    function showImg(self) {
+        if (self.getAttribute('id') == '') {
+            self.setAttribute('id', 'showingImg');
+            // setTimeout(() => {
+            //     self.style.setProperty('id','showingImg')
+            // }, 600);
+        } else {
+            self.setAttribute('id', '');
+        }
+    }
+
+
+    function mapTo(x, y, s) {
+        // console.log('!!!');
+        map = new BMap.Map("map");
+        map.centerAndZoom(new BMap.Point(x, y), s);
+        setMapEvent();
+        addMapControl();
+        addMapOverlay();
+    }
+</script>
+
 </html>
